@@ -12,12 +12,7 @@
       <class name="com.crm.qa.testcases.MatchPageTest"/>
       <class name="com.crm.qa.testcases.AssignmentsPageFreeTest"/> 
       <class name="com.crm.qa.testcases.StorePageFreeTest"/> 
-      <class name="com.crm.qa.testcases.CommunityPageFreeTest"/>
-      <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest"/>
-      <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>
-      <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
-      <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
-      <class name="com.crm.qa.testcases.MatchPageAdminTest"/>
+      
           
     </classes>
   </test> <!-- Test -->

@@ -11,8 +11,7 @@
       <class name="com.crm.qa.testcases.CompleteAssignmentTest"/>
       <class name="com.crm.qa.testcases.MatchPageTest"/>
       <class name="com.crm.qa.testcases.AssignmentsPageFreeTest"/> 
-      <class name="com.crm.qa.testcases.StorePageFreeTest"/> 
-      
+      <class name="com.crm.qa.testcases.StorePageFreeTest"/>   
           
     </classes>
   </test> <!-- Test -->

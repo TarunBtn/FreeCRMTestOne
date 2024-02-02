@@ -36,13 +36,18 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitTwo();
-		homePageAdmin.clickIntermediaryCompanyTab();
+		//homePageAdmin.clickUserLogoPhoto();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		homePageAdmin.clickNativeCompanyTab();
 		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
+		//homePageAdmin.clickNativeCompanyTab();
+		//testUtil.testWaitFour();
 	}
 	
 	@Test
@@ -56,47 +61,75 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//Add new company
 		uLogoIntermediarycompanyPage.clickAddNewCompany();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.enterCompanyName("SilverTouch");
 		testUtil.testWaitEight();
 		uLogoIntermediarycompanyPage.selectCompanyTooltip();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		//uLogoIntermediarycompanyPage.aboutYourCompany("Testdata");
+		//testUtil.testWaitFour();
+		//Sector
+		uLogoIntermediarycompanyPage.clickSectorDropDown();
+		testUtil.testWaitTwo();
+		uLogoIntermediarycompanyPage.selectSector();
+		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		//Enter website
 		uLogoIntermediarycompanyPage.clearWebsiteValue();
 		testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.enterWebsite("https://silvertouch.com/");
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//Save company
 		uLogoIntermediarycompanyPage.clickSaveBtn();
+		testUtil.testWaitEight();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollUp();
+		//testUtil.testWaitFour();
+		uLogoIntermediarycompanyPage.clickCancelBtn();
+		testUtil.testWaitFour();
+		//Edit company
+		/*uLogoIntermediarycompanyPage.clickEditBtn();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitEight();
-		//Edit company
-		uLogoIntermediarycompanyPage.clickEditBtn();
-		testUtil.testWaitFour();
-		uLogoIntermediarycompanyPage.clearCompanyName();
 		testUtil.testWaitTwo();
-		uLogoIntermediarycompanyPage.enterCompanyName("One");
+		//uLogoIntermediarycompanyPage.clearCompanyName();
+		//testUtil.testWaitTwo();
+		//uLogoIntermediarycompanyPage.enterCompanyName("One");
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		//Save
-		uLogoIntermediarycompanyPage.clickSaveBtnEdit();
+		//uLogoIntermediarycompanyPage.clickSaveBtnEdit();
+		uLogoIntermediarycompanyPage.clickEditCancel();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();*/
 		//Delete Company
 		uLogoIntermediarycompanyPage.clickDeleteSign();
-		testUtil.testWaitTwo();
-		uLogoIntermediarycompanyPage.clickDeleteCompany();
+		testUtil.testWaitEight();
+		//uLogoIntermediarycompanyPage.clickDeleteCompany();
+		uLogoIntermediarycompanyPage.clickCancelDelete();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 		
 	}
 	

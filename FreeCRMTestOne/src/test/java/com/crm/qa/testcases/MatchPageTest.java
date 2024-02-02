@@ -18,7 +18,6 @@ public class MatchPageTest extends TestBase{
 	MatchPage matchPage;
 	TestUtil testUtil;
 	
-	
 	public MatchPageTest() {
 		super();
 	}
@@ -33,7 +32,7 @@ public class MatchPageTest extends TestBase{
 		testUtil.testWaitEight();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();
-		homePage.clickMatchTab();
+		homePage.clickMatchLink();
 		testUtil.testWaitEight();
 				
 	}
@@ -113,7 +112,7 @@ public class MatchPageTest extends TestBase{
 		testUtil.testWaitTwo();		
 		matchPage.clickEnterValueSkill();
 		testUtil.testWaitTwo();
-		matchPage.enterValueSkill("Postman");
+		matchPage.enterValueSkill("Account");
 		testUtil.testWaitFour();
 		matchPage.selectTooltipSkill();
 		testUtil.testWaitFour();

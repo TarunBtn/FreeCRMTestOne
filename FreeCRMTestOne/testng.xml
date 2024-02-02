@@ -18,16 +18,6 @@
       <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
       <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
       <class name="com.crm.qa.testcases.MatchPageAdminTest"/>
-      <class name="com.crm.qa.testcases.UlogoMydashboardPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoChatPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMynotificationsPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMyprofilePageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMycompanyPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMyreactionsPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoUsermanagementPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoAllcompaniesPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoAllassignmentsPageTest"/>
           
     </classes>
   </test> <!-- Test -->

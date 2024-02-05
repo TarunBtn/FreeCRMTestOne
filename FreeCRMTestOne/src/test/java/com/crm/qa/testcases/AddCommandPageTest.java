@@ -43,6 +43,7 @@ public class AddCommandPageTest extends TestBase{
 		
 	}
 	
+	@SuppressWarnings("static-access")
 	@Test
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();

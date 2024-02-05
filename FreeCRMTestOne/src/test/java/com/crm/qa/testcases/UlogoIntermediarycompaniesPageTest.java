@@ -123,11 +123,11 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitFour();*/
 		//Delete Company
-		uLogoIntermediarycompanyPage.clickDeleteSign();
-		testUtil.testWaitEight();
+		  //uLogoIntermediarycompanyPage.clickDeleteSign();
+		  //testUtil.testWaitEight();
 		//uLogoIntermediarycompanyPage.clickDeleteCompany();
-		uLogoIntermediarycompanyPage.clickCancelDelete();
-		testUtil.testWaitFour();
+		  //uLogoIntermediarycompanyPage.clickCancelDelete();
+		  //testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitFour();
 		

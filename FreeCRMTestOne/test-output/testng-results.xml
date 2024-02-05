@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-05T12:57:29 IST" name="Default suite" finished-at="2024-02-05T12:57:30 IST" duration-ms="1753">
+  <suite started-at="2024-02-05T15:57:25 IST" name="Default suite" finished-at="2024-02-05T15:57:26 IST" duration-ms="1492">
     <groups>
     </groups>
-    <test started-at="2024-02-05T12:57:29 IST" name="Default test" finished-at="2024-02-05T12:57:30 IST" duration-ms="1753">
+    <test started-at="2024-02-05T15:57:25 IST" name="Default test" finished-at="2024-02-05T15:57:26 IST" duration-ms="1492">
       <class name="com.crm.qa.testcases.AddCommandPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T12:57:29 IST" name="setUp" finished-at="2024-02-05T12:57:30 IST" duration-ms="1697" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:25 IST" name="setUp" finished-at="2024-02-05T15:57:26 IST" duration-ms="1459" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -60,7 +60,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="uploadFileTest()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T12:57:30 IST" name="uploadFileTest" finished-at="2024-02-05T12:57:30 IST" duration-ms="0" status="SKIP">
+        <test-method signature="uploadFileTest()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:26 IST" name="uploadFileTest" finished-at="2024-02-05T15:57:26 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -113,7 +113,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadFileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T12:57:30 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707118050873" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:26 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707128846762" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

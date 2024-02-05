@@ -11,7 +11,7 @@ public class UlogoAllcompaniesPage extends TestBase{
 	
 	//Pagefactory OR Object Repository
 	
-		@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select")
+		@FindBy(xpath="//*[@id=\"__BVID__21\"]")
 		WebElement verifiedCompanyDropDown;
 		
 		@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select/option[1]")

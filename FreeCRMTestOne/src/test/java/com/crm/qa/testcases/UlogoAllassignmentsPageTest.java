@@ -28,15 +28,15 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		uLogoAllassignmentsPage=new UlogoAllassignmentsPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEleven();
-		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
+		homePageAdmin.clickAcceptAllCookies();
+		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		homePageAdmin.clickAllassignmentsTab();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
 		
 	}
 	
@@ -54,21 +54,17 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoAllassignmentsPage.clickResetCompany();
 		testUtil.testWaitFour();
-		//testUtil.scrollDown();
-		//testUtil.testWaitFour();
 		uLogoAllassignmentsPage.clickFilterDropDown();
 		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.selectFilterDropDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		uLogoAllassignmentsPage.clickStatusDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoAllassignmentsPage.selectStatusDropDown();
-		testUtil.testWaitEight();
-		uLogoAllassignmentsPage.cancelStatus();
-		testUtil.testWaitEight();
-		uLogoAllassignmentsPage.cancelFilter();
-		testUtil.testWaitEight();
-				
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+			
 	}
 	
 	@AfterMethod

@@ -8,7 +8,7 @@ import com.crm.qa.base.TestBase;
 
 public class MyAssignmentsPage extends TestBase{
 	//Page factory or Object Repository
-			@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div[1]/div/a")
+			@FindBy(xpath="//*[@id=\"page-header\"]/div[2]/div/div/div/div/a")
 			WebElement addNewCommand;
 				
 			@FindBy(id="filter-input")
@@ -20,13 +20,16 @@ public class MyAssignmentsPage extends TestBase{
 			@FindBy(xpath="//*[@id=\"initial-sort-select\"]")
 			WebElement chooseCompanyDropDown;
 				
-			@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[10]")
+			@FindBy(xpath="//option[text()='The Green Clean Company']")
 			WebElement selectCompanyFromDropDown;
 			
-			@FindBy(xpath="//*[@id=\"table\"]/tbody/tr[3]/td[4]/div/a/span[2]")
+			@FindBy(xpath="//a[@href='/mijn-opdrachten/reacties/e1d8e64f-23c5-4719-ac61-eb72e9193f9d']")
 			WebElement clickComments;
 			
-			@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/table/tbody/tr[1]/td[7]/button[1]/span")
+			@FindBy(xpath="document.querySelector(\"#my-companies > div > div > div > div > table > tbody > tr:nth-child(1)\")")
+			WebElement scrollRight;
+			
+			@FindBy(xpath="//span[text()='thumb_up_off_alt']")
 			WebElement clickStatusThumbsup;
 			
 			@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div[2]/div/div/div[1]/div[3]/div/div[1]")
@@ -57,7 +60,10 @@ public class MyAssignmentsPage extends TestBase{
 			WebElement pendingTab;
 				
 			@FindBy(xpath="//option[@value='Open']")
-			WebElement selectStatusFromDropDown;
+			WebElement selectStatusFromDropDownOpen;
+			
+			@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[4]")
+			WebElement selectStatusFromDropDownClosed;
 			
 			@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div/div[1]/div[3]/select/option[1]")
 			WebElement clearStatusFromDropDown;
@@ -88,6 +94,13 @@ public class MyAssignmentsPage extends TestBase{
 			
 			public void clickCommentsLink() {
 				clickComments.click();
+			}
+			
+			public void clickScrollRight() {
+				scrollRight.click();
+				//JavascriptExecutor js=(JavascriptExecutor)Driver;
+				//Object document;
+				//js.executeScript(Driver.findElement(By.cssSelector("#my-companies > div > div > div > div > table > tbody > tr:nth-child(1)"))).scrollLeft=300;  
 			}
 			
 			public void clickStatusThumbsup() {
@@ -127,8 +140,12 @@ public class MyAssignmentsPage extends TestBase{
 				statusDropDown.click();	
 			}
 				
-			public void selectStatusFromDropDown() {
-				selectStatusFromDropDown.click();
+			public void selectStatusFromDropDownOpen() {
+				selectStatusFromDropDownOpen.click();
+			}
+			
+			public void selectStatusFromDropDownClosed() {
+				selectStatusFromDropDownClosed.click();
 			}
 			
 			public void clearStatusFromDropDown() {

@@ -30,18 +30,19 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		uLogoMyassignmentsPage=new UlogoMyassignmentsPage();
 		testUtil=new TestUtil();
+		testUtil.testWaitTwo();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		homePageAdmin.clickMyAssignmentsTab();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 			
 	}
 	
@@ -53,17 +54,25 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		myAssignmentsPage.clickCommentsLink();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
+		//testUtil.scrollRight();
+		//testUtil.testWaitTwo();
+		//myAssignmentsPage.clickScrollRight();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.clickStatusThumbsup();
 		testUtil.testWaitEleven();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		myAssignmentsPage.clickPendingTab();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		myAssignmentsPage.clickEntrepreneurCheckbox();
 		testUtil.testWaitTwo();
@@ -86,7 +95,7 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quit();
+		Driver.quit();
 	}
 
 }

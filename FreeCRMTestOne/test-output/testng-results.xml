@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-05T15:57:25 IST" name="Default suite" finished-at="2024-02-05T15:57:26 IST" duration-ms="1492">
+  <suite started-at="2024-02-05T17:45:12 IST" name="Default suite" finished-at="2024-02-05T17:45:13 IST" duration-ms="1421">
     <groups>
     </groups>
-    <test started-at="2024-02-05T15:57:25 IST" name="Default test" finished-at="2024-02-05T15:57:26 IST" duration-ms="1492">
-      <class name="com.crm.qa.testcases.AddCommandPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:25 IST" name="setUp" finished-at="2024-02-05T15:57:26 IST" duration-ms="1459" status="FAIL">
+    <test started-at="2024-02-05T17:45:12 IST" name="Default test" finished-at="2024-02-05T17:45:13 IST" duration-ms="1421">
+      <class name="com.crm.qa.testcases.UlogoMyassignmentsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.UlogoMyassignmentsPageTest@783a467b]" started-at="2024-02-05T17:45:12 IST" name="setUp" finished-at="2024-02-05T17:45:13 IST" duration-ms="1395" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -21,7 +21,7 @@ at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
 at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:191)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
 at com.crm.qa.base.TestBase.initialization(TestBase.java:63)
-at com.crm.qa.testcases.AddCommandPageTest.setUp(AddCommandPageTest.java:29)
+at com.crm.qa.testcases.UlogoMyassignmentsPageTest.setUp(UlogoMyassignmentsPageTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,7 +60,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="uploadFileTest()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:26 IST" name="uploadFileTest" finished-at="2024-02-05T15:57:26 IST" duration-ms="0" status="SKIP">
+        <test-method signature="UlogoMyassignmentsPage()[pri:0, instance:com.crm.qa.testcases.UlogoMyassignmentsPageTest@783a467b]" started-at="2024-02-05T17:45:13 IST" name="UlogoMyassignmentsPage" finished-at="2024-02-05T17:45:13 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -74,7 +74,7 @@ at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
 at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:191)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
 at com.crm.qa.base.TestBase.initialization(TestBase.java:63)
-at com.crm.qa.testcases.AddCommandPageTest.setUp(AddCommandPageTest.java:29)
+at com.crm.qa.testcases.UlogoMyassignmentsPageTest.setUp(UlogoMyassignmentsPageTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,12 +112,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadFileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-05T15:57:26 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707128846762" status="SKIP">
+        </test-method> <!-- UlogoMyassignmentsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.UlogoMyassignmentsPageTest@783a467b]" started-at="2024-02-05T17:45:13 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707135313570" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.AddCommandPageTest -->
+      </class> <!-- com.crm.qa.testcases.UlogoMyassignmentsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

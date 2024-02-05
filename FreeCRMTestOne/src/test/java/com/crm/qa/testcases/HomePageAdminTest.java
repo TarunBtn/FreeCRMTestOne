@@ -28,16 +28,18 @@ public class HomePageAdminTest extends TestBase{
 		assignmentsPageAdmin=new AssignmentsPageAdmin();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
+		//testUtil.testWaitFour();
+		
 	}
 	
 	@Test
 	public void test()throws Exception {
 		//testUtil.testWaitEight();
 		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

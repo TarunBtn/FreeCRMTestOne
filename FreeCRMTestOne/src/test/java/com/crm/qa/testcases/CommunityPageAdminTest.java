@@ -96,5 +96,6 @@ public class CommunityPageAdminTest extends TestBase{
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 }

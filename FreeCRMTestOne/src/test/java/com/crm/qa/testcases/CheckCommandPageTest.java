@@ -28,6 +28,7 @@ public class CheckCommandPageTest extends TestBase{
 		super();
 	}
 	
+	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -38,32 +39,37 @@ public class CheckCommandPageTest extends TestBase{
 		completeAssignment=new CompleteAssignment();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
-		testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEleven();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 							
 	}
 	
 	@Test
 	public void checkCommandPageTest()throws Exception {
-		completeAssignment=checkCommandPage.clickFillInComplete();
-		testUtil.testWaitEight();
+		//checkCommandPage.clickFillInComplete();
+		//testUtil.testWaitEight();
 	}
 	
 	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}	
 }

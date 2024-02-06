@@ -40,22 +40,26 @@ public class MyNetworkPageFreeTest extends TestBase{
 		homePageFree.clickNetworkTabTooltip();
 		testUtil.testWaitFour();
 		communityPageFree.clickMyNetworkBtn();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		
 	}
 	
 	@Test
 	public void myNetworkPageFreeTest()throws Exception {
 		myNetworkPageFree.clickMyNetworkTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		myNetworkPageFree.clickMyRequestsTab();
 		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickSuggestionsForYouTab();
 		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickAreaOfInterest();
 		testUtil.testWaitEight();
 	}
@@ -63,5 +67,6 @@ public class MyNetworkPageFreeTest extends TestBase{
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
-	}	
+	}
+	
 }

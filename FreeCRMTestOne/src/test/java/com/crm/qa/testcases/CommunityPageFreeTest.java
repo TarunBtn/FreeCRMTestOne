@@ -31,7 +31,7 @@ public class CommunityPageFreeTest extends TestBase{
 		myNetworkPageFree=new MyNetworkPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitFourteen();
+		testUtil.testWaitEleven();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePageFree.clickNetworkTab();
@@ -99,6 +99,7 @@ public class CommunityPageFreeTest extends TestBase{
 	@AfterMethod
 	public void tearDown(){
 		Driver.quit();
+		
 	}
 
 }

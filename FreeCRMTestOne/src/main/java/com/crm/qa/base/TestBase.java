@@ -44,17 +44,17 @@ public class TestBase {
 			//Driver=new FirefoxDriver();
 		//}
 	
-		//ChromeOptions chromeOptions = new ChromeOptions();
-        //chromeOptions.addArguments("--headless");
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
         
 		    //Driver=new ChromeDriver(chromeOptions);
-		//ChromeOptions options = new ChromeOptions();
-        //options.setHeadless(true);
+		ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
             //opt.addArguments("--headless=new");
             //System.setProperty("webdriver.chrome.driver", "./YounitedAa/src/main/java/chromedriver");
         //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
         //Driver = new ChromeDriver(options);
-		Driver=new ChromeDriver();
+		//Driver=new ChromeDriver();
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);

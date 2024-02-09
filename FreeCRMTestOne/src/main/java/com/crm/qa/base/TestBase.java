@@ -36,10 +36,10 @@ public class TestBase {
 	public static void initialization()throws Exception {
 		//String browserName=prop.getProperty("browser");
 		
-		if(browser.equals("chrome")) {
+		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			Driver=new ChromeDriver();
-		}else if(browser.equals("FF")) {
+		}else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.firefox.driver", "C:\\geckodriver\\geckodriver.exe");
 			Driver=new FirefoxDriver();
 		}

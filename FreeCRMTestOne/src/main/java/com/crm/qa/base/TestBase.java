@@ -32,7 +32,6 @@ public class TestBase {
 			
 	}
 	
-	@SuppressWarnings("deprecation")
 	public static void initialization()throws Exception {
 		//String browserName=prop.getProperty("browser");
 		

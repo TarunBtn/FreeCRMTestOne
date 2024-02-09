@@ -55,11 +55,13 @@ public class TestBase {
             //System.setProperty("webdriver.chrome.driver", "./YounitedAa/src/main/java/chromedriver");
         //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
         //Driver = new ChromeDriver(options);
+		
 		Driver=new ChromeDriver();
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		Driver.get(prop.getProperty("url"));
 		Thread.sleep(2000);
 		

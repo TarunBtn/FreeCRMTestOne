@@ -44,7 +44,6 @@ public class TestBase {
 			//Driver=new FirefoxDriver();
 		//}
 	
-		
 		//ChromeOptions chromeOptions = new ChromeOptions();
         //chromeOptions.addArguments("--headless");
 		//chromeOptions.setHeadless(true);

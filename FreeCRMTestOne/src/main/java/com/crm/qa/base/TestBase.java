@@ -44,13 +44,12 @@ public class TestBase {
 			//Driver=new FirefoxDriver();
 		//}
 	
-		ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+		ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
         
 		    //Driver=new ChromeDriver(chromeOptions);
-		    //ChromeOptions options = new ChromeOptions();
-		ChromeDriver chromeDriver = new ChromeDriver(options);
-        //options.setHeadless(true);
+		ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
             //opt.addArguments("--headless=new");
             //System.setProperty("webdriver.chrome.driver", "./YounitedAa/src/main/java/chromedriver");
         //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");

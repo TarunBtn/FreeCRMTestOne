@@ -36,13 +36,13 @@ public class TestBase {
 	public static void initialization()throws Exception {
 		//String browserName=prop.getProperty("browser");
 		
-		//if(browserName.equals("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-			//Driver=new ChromeDriver();
-		//}else if(browserName.equals("FF")) {
-			//System.setProperty("webdriver.firefox.driver", "C:\\geckodriver\\geckodriver.exe");
-			//Driver=new FirefoxDriver();
-		//}
+		if(browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+			Driver=new ChromeDriver();
+		}else if(browser.equals("FF")) {
+			System.setProperty("webdriver.firefox.driver", "C:\\geckodriver\\geckodriver.exe");
+			Driver=new FirefoxDriver();
+		}
 	
 		//ChromeOptions chromeOptions = new ChromeOptions();
         //chromeOptions.addArguments("--headless");

@@ -45,11 +45,12 @@ public class TestBase {
 		//}
 	
 		ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
+        //chromeOptions.addArguments("--headless");
+		chromeOptions.setHeadless(true);
         
-		    //Driver=new ChromeDriver(chromeOptions);
-		ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
+		Driver=new ChromeDriver(chromeOptions);
+		//ChromeOptions options = new ChromeOptions();
+        //options.setHeadless(true);
             //opt.addArguments("--headless=new");
             //System.setProperty("webdriver.chrome.driver", "./YounitedAa/src/main/java/chromedriver");
         //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");

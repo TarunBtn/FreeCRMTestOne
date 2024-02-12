@@ -35,7 +35,7 @@ public class HomePageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
-		testUtil.testWaitFourteen();
+		testUtil.testWaitEight();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 				
@@ -52,15 +52,15 @@ public class HomePageTest extends TestBase{
 	@Test(priority=2)
 	public void verifyImageLogoTest()throws Exception {
 		Boolean logo=homePage.verifyImageLogo();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		Assert.assertTrue(logo);
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 	}
 	
 	@Test(priority=3)
 	public void clickMyAssignmentsLinkTest()throws Exception {
 		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 	}
 	
 	

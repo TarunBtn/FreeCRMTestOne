@@ -52,15 +52,15 @@ public class HomePageTest extends TestBase{
 	@Test(priority=2)
 	public void verifyImageLogoTest()throws Exception {
 		Boolean logo=homePage.verifyImageLogo();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		Assert.assertTrue(logo);
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@Test(priority=3)
 	public void clickMyAssignmentsLinkTest()throws Exception {
 		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	

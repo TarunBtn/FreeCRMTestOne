@@ -84,18 +84,21 @@ public class HomePageAdmin extends TestBase{
 		}
 			
 		//Actions
-		public AssignmentsPageAdmin clickAssignmentsTab() {
-			assignmentsTab.click();		
+		public AssignmentsPageAdmin clickAssignmentsTab()throws Exception {
+			assignmentsTab.click();
+			Thread.sleep(2000);			
 			return new AssignmentsPageAdmin();
 		}
 			
-		public CommunityPageAdmin clickCommunityPageAdmin() {
-			communityTab.click();		
+		public CommunityPageAdmin clickCommunityPageAdmin()throws Exception {
+			communityTab.click();
+			Thread.sleep(2000);
 			return new CommunityPageAdmin();
 		}
 			
-		public MatchPageAdmin clickMatchTab() {
-			matchTab.click();			
+		public MatchPageAdmin clickMatchTab()throws Exception {
+			matchTab.click();
+			Thread.sleep(2000);
 			return new MatchPageAdmin();
 		}
 			

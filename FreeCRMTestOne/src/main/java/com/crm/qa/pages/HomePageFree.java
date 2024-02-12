@@ -44,6 +44,9 @@ public class HomePageFree extends TestBase{
 			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/a/img[1]")
 			WebElement logoImage;
 			
+			@FindBy(xpath="//*[@id=\"lead-reaction-modal___BV_modal_body_\"]/div[2]/button")
+			WebElement suitableAssignments;
+			
 				
 			//Initialization
 			public HomePageFree() {
@@ -51,6 +54,10 @@ public class HomePageFree extends TestBase{
 			}
 				
 			//Actions
+			public void suitableAssignments() {
+				suitableAssignments.click();
+			}
+			
 			public void clickDashboardTab() {
 				dashboard.click();
 			}

@@ -2,26 +2,17 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-08T15:51:03 IST" name="Default suite" finished-at="2024-02-08T15:51:05 IST" duration-ms="1820">
+  <suite started-at="2024-02-15T15:18:52 IST" name="Default suite" finished-at="2024-02-15T15:18:52 IST" duration-ms="40">
     <groups>
     </groups>
-    <test started-at="2024-02-08T15:51:03 IST" name="Default test" finished-at="2024-02-08T15:51:05 IST" duration-ms="1820">
-      <class name="com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@783a467b]" started-at="2024-02-08T15:51:03 IST" name="setUp" finished-at="2024-02-08T15:51:05 IST" duration-ms="1793" status="FAIL">
+    <test started-at="2024-02-15T15:18:52 IST" name="Default test" finished-at="2024-02-15T15:18:52 IST" duration-ms="40">
+      <class name="com.crm.qa.testcases.AddCommandPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-15T15:18:52 IST" name="setUp" finished-at="2024-02-15T15:18:52 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
-at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
-at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
-at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
-at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:191)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at com.crm.qa.base.TestBase.initialization(TestBase.java:63)
-at com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest.setUp(UlogoIntermediarycompaniesPageTest.java:28)
+              <![CDATA[java.lang.NullPointerException
+at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
+at com.crm.qa.testcases.AddCommandPageTest.setUp(AddCommandPageTest.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,21 +51,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="UlogoIntermediarycompanyPage()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@783a467b]" started-at="2024-02-08T15:51:05 IST" name="UlogoIntermediarycompanyPage" finished-at="2024-02-08T15:51:05 IST" duration-ms="0" status="SKIP">
+        <test-method signature="uploadFileTest()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-15T15:18:52 IST" name="uploadFileTest" finished-at="2024-02-15T15:18:52 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
-at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
-at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
-at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
-at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:191)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-at com.crm.qa.base.TestBase.initialization(TestBase.java:63)
-at com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest.setUp(UlogoIntermediarycompaniesPageTest.java:28)
+              <![CDATA[java.lang.NullPointerException
+at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
+at com.crm.qa.testcases.AddCommandPageTest.setUp(AddCommandPageTest.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,12 +94,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UlogoIntermediarycompanyPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@783a467b]" started-at="2024-02-08T15:51:05 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707387665314" status="SKIP">
+        </test-method> <!-- uploadFileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AddCommandPageTest@783a467b]" started-at="2024-02-15T15:18:52 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1707990532419" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest -->
+      </class> <!-- com.crm.qa.testcases.AddCommandPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

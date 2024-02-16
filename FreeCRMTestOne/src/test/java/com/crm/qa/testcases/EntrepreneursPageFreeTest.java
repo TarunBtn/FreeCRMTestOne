@@ -10,8 +10,7 @@ import com.crm.qa.pages.HomePageFree;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
-public class EntrepreneursPageFreeTest extends TestBase{
-	
+public class EntrepreneursPageFreeTest extends TestBase{	
 	LoginPage loginPage;
 	HomePageFree homePageFree;
 	TestUtil testUtil;
@@ -32,7 +31,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageFree.suitableAssignments();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		homePageFree.clickEntrepreneurTab();
 		testUtil.testWaitEleven();
 				

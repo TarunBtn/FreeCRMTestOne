@@ -11,8 +11,7 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MatchPage;
 import com.crm.qa.util.TestUtil;
 
-public class MatchPageTest extends TestBase{
-	
+public class MatchPageTest extends TestBase{	
 	LoginPage loginPage;
 	HomePage homePage;
 	MatchPage matchPage;
@@ -112,21 +111,47 @@ public class MatchPageTest extends TestBase{
 		testUtil.testWaitTwo();		
 		matchPage.clickEnterValueSkill();
 		testUtil.testWaitTwo();
-		matchPage.enterValueSkill("Account");
+		matchPage.enterValueSkill("Accountbeheer");
 		testUtil.testWaitFour();
-		matchPage.selectTooltipSkill();
+		//matchPage.selectTooltipSkill();
+		//testUtil.testWaitFour();
+		matchPage.enterValueSkillTab();
 		testUtil.testWaitFour();
+		matchPage.clickSkillTab();
+		testUtil.testWaitTwo();
 		try {
 		matchPage.clickApplyFilterSkill();
 		testUtil.testWaitEight();
 		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
+		//matchPage.clickSkillTab();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		matchPage.clickResetFilterSkill();
 		testUtil.testWaitEight();
-		matchPage.clickSkillTab();
+		//matchPage.clickSkillTab();
+		//testUtil.testWaitTwo();
+		//matchPage.clickCancelSkill();
+		//testUtil.testWaitTwo();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
-		matchPage.clickCancelSkill();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		//Stored
 		matchPage.clickStored();
@@ -157,7 +182,7 @@ public class MatchPageTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }

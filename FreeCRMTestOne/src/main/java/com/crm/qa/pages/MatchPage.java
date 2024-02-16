@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -80,13 +81,13 @@ public class MatchPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"dropdown-vakgebied\"]/div/form/div[8]/label")
 		WebElement selectDescipline;
 				
-		@FindBy(id="dropdown-skills-btn")
+		@FindBy(xpath="//*[@id=\"dropdown-skills-btn\"]")
 		WebElement skill;
 				
-		@FindBy(xpath="/html/body/div[1]/main/div/nav/div[2]/div/div[2]/div[6]/div/form/div[1]/div/div/div[1]/input")
+		@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/nav/div[2]/div/div[2]/div[6]/div/form/div[1]/div/div/input")
 		WebElement enterValueSkill;
 				
-		@FindBy(xpath="/html/body/div[1]/main/div/nav/div[2]/div/div[2]/div[6]/div/form/div[1]/div/div/div[2]/a/div[2]/span/span")
+		@FindBy(xpath="/html/body")
 		WebElement selectTooltipSkill;
 				
 		@FindBy(xpath="//*[@id=\"dropdown-skills\"]/div/form/div[4]/button")
@@ -240,6 +241,10 @@ public class MatchPage extends TestBase{
 				
 		public void enterValueSkill(String value) {
 			enterValueSkill.sendKeys(value);
+		}
+		
+		public void enterValueSkillTab() {
+			enterValueSkill.sendKeys(Keys.TAB);
 		}
 				
 		public void selectTooltipSkill() {

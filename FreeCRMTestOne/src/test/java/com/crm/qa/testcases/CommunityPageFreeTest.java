@@ -11,8 +11,7 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MyNetworkPageFree;
 import com.crm.qa.util.TestUtil;
 
-public class CommunityPageFreeTest extends TestBase{
-	
+public class CommunityPageFreeTest extends TestBase{	
 	LoginPage loginPage;
 	HomePageFree homePageFree;
 	CommunityPageFree communityPageFree;
@@ -31,7 +30,8 @@ public class CommunityPageFreeTest extends TestBase{
 		myNetworkPageFree=new MyNetworkPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitFourteen();
+		testUtil.testWaitEleven();
+		testUtil.testWaitFour();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageFree.suitableAssignments();

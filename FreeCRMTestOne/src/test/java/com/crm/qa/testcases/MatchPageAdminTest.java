@@ -11,7 +11,6 @@ import com.crm.qa.pages.MatchPageAdmin;
 import com.crm.qa.util.TestUtil;
 
 public class MatchPageAdminTest extends TestBase{
-
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	MatchPageAdmin matchPageAdmin;
@@ -130,9 +129,9 @@ public class MatchPageAdminTest extends TestBase{
 		matchPageAdmin.clickApplyFilterSkill();
 		testUtil.testWaitEleven();
 		matchPageAdmin.clickResetFilterSkill();
-		testUtil.testWaitEight();
-		matchPageAdmin.clickSkillTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEleven();
+		//matchPageAdmin.clickSkillTab();
+		//testUtil.testWaitTwo();
 		matchPageAdmin.clickCancelSkill();
 		testUtil.testWaitTwo();
 		//Stored

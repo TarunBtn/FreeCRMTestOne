@@ -12,7 +12,6 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
 public class CommunityPageAdminTest extends TestBase{
-
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	CommunityPageFree communityPageFree;

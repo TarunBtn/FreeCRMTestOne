@@ -11,7 +11,6 @@ import com.crm.qa.pages.UlogoAllassignmentsPage;
 import com.crm.qa.util.TestUtil;
 
 public class UlogoAllassignmentsPageTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	UlogoAllassignmentsPage uLogoAllassignmentsPage;

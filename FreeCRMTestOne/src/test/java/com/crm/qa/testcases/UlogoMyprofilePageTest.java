@@ -11,7 +11,6 @@ import com.crm.qa.pages.UlogoMyprofilePage;
 import com.crm.qa.util.TestUtil;
 
 public class UlogoMyprofilePageTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	UlogoMyprofilePage uLogoMyprofilePage;
@@ -60,24 +59,28 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickChangeMyGeneralInformationCancel();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		uLogoMyprofilePage.clickFillInCompany();
+		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		uLogoMyprofilePage.clickFillInCompanyCancel();
-		testUtil.testWaitFour();
+		//uLogoMyprofilePage.clickFillInCompany();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		//uLogoMyprofilePage.clickFillInCompanyCancel();
+		//testUtil.testWaitFour();
 		uLogoMyprofilePage.clickSkillsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -99,9 +102,15 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickDeleteSkills();
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		//Work experience
 		uLogoMyprofilePage.clickWorkExperienceTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickAddWorkExperience();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -124,10 +133,10 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.selectStartYear();
 		testUtil.testWaitTwo();
-		uLogoMyprofilePage.selectStartYear();
-		testUtil.testWaitTwo();
-		uLogoMyprofilePage.selectStartYear();
-		testUtil.testWaitTwo();
+		//uLogoMyprofilePage.selectStartYear();
+		//testUtil.testWaitTwo();
+		//uLogoMyprofilePage.selectStartYear();
+		//testUtil.testWaitTwo();
 		uLogoMyprofilePage.selectStartDate();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickEndDateCalender();
@@ -154,6 +163,10 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.deleteWorkExperience();
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickDeleteWorkExperience();
@@ -163,7 +176,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Upload CV
 		uLogoMyprofilePage.clickUploadCV();
 		testUtil.testWaitTwo();
@@ -175,9 +188,9 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickUpdateMyProfile();
 		testUtil.testWaitFour();
-		uLogoMyprofilePage.clickCancelUploadCV();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
+		//uLogoMyprofilePage.clickCancelUploadCV();
+		//testUtil.testWaitFour();
+		testUtil.scrollUp();
 		testUtil.testWaitFour();
 		//Educations
 		uLogoMyprofilePage.clickEducationsTab();

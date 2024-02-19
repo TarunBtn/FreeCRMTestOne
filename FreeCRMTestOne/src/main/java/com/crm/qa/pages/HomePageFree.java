@@ -14,7 +14,7 @@ public class HomePageFree extends TestBase{
 			@FindBy(partialLinkText="Opdrachten")
 			WebElement assignmentsLink;
 				
-			@FindBy(xpath="//span[text()='Accepteer alles']")
+			@FindBy(xpath="//button[@data-cookiefirst-button='primary']")
 			WebElement acceptAllCookies;
 			
 			@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul[1]/li[3]/a/span")

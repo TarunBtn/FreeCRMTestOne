@@ -11,7 +11,6 @@ import com.crm.qa.pages.UlogoUsermanagementPage;
 import com.crm.qa.util.TestUtil;
 
 public class UlogoUsermanagementPageTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	UlogoUsermanagementPage uLogoUsermanagementPage;
@@ -32,26 +31,39 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageAdmin.clickUserManagementTab();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		
 		
 	}
 	
 	@Test
 	public void uLogoUsermanagementPageTest()throws Exception {
 		uLogoUsermanagementPage.enterSearchName("Ajay");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickResetSearchName();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.enterEmailAddress("tb+acc-freelancer@test.nowonline.nl");
 		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickExactSearch();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickExactSearch();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickResetEmailAddress();
@@ -61,6 +73,10 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectRole();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickRoleDropDown();
 		testUtil.testWaitTwo();
 		//Availability
@@ -68,6 +84,10 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectOnlyAvailable();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickEverythingDropDown();
 		testUtil.testWaitTwo();
 		//Descipline
@@ -75,11 +95,19 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectDescipline();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
 		//ElevatorPitch
 		uLogoUsermanagementPage.clickElevatorPitch();
 		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.clickElevatorPitch();
 		testUtil.testWaitEight();
 		uLogoUsermanagementPage.clickDesciplineDropDown();
@@ -100,10 +128,12 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		//Skills
 		uLogoUsermanagementPage.clickSkillsTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoUsermanagementPage.enterValueSkills("Postman");
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.selectTooltipSkills();
+		testUtil.testWaitFour();
+		uLogoUsermanagementPage.clickSkillsTab();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickApplyFilterSkills();
 		testUtil.testWaitEight();

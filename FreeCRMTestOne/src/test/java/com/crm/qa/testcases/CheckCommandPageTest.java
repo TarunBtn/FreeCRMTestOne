@@ -14,7 +14,6 @@ import com.crm.qa.pages.MyAssignmentsPage;
 import com.crm.qa.util.TestUtil;
 
 public class CheckCommandPageTest extends TestBase{
-
 	LoginPage loginPage;
 	HomePage homePage;
 	MyAssignmentsPage myAssignmentsPage;
@@ -48,9 +47,9 @@ public class CheckCommandPageTest extends TestBase{
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEleven();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
+		addCommandPage.clickChooseFile();
+		testUtil.testWaitEight();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();

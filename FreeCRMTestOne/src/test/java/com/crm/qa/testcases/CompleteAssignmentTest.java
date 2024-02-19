@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,7 +20,6 @@ import com.crm.qa.pages.MyAssignmentsPage;
 import com.crm.qa.util.TestUtil;
 
 public class CompleteAssignmentTest extends TestBase {
-	
 	LoginPage loginPage;
 	HomePage homePage;
 	MyAssignmentsPage myAssignmentsPage;
@@ -47,29 +47,41 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitEleven();		
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
-		testUtil.testWaitEleven();
-		addCommandPage=myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEight();												
+		testUtil.testWaitEight();
+		testUtil.testWaitFour();
+		//addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\Testfile.docx");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		checkCommandPage.clickFillInComplete();
 		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
 	}
 	
 	@Test
 	public void completeAssignmentTest()throws Exception {
+		completeAssignment.clickCompanyDropDown();
+		testUtil.testWaitTwo();
 		completeAssignment.selectCompany();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		completeAssignment.clickSectorDropDown();
 		testUtil.testWaitTwo();
 		completeAssignment.selectSectorFromDropDown();
 		testUtil.testWaitTwo();
-		completeAssignment.selectWorkLocation();
-		testUtil.testWaitFour();
+		//completeAssignment.selectWorkLocation();
+		//testUtil.testWaitFour();
 		//completeAssignment.clickWorkLocationTooltip();
 		//testUtil.testWaitFour();
 		//try {
@@ -82,18 +94,36 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-	    testUtil.testWaitEleven();
+	    testUtil.testWaitFour();
 		//Generate description
 	    try {
 		    completeAssignment.clickGenerateDescription();
+		    testUtil.testWaitEleven();
+		    testUtil.testWaitEleven();
 		    testUtil.testWaitEight();
-		    //testUtil.testWaitFourteen();
-	    }catch(NoSuchElementException e) {
+		    testUtil.testWaitEleven();
+		    testUtil.testWaitEight();
+		    //testUtil.testWaitEleven();
+	   }catch(NoSuchElementException e) {
+	   	  e.printStackTrace();
+	   }
+	    testUtil.scrollDown();
+	    testUtil.testWaitFour();
+	    //testUtil.scrollDown();
+	    //testUtil.testWaitTwo();
+	    try {
+		   completeAssignment.clickUseThisText();
+	    }catch(ElementClickInterceptedException e) {
 	    	e.printStackTrace();
-	    }	    
-		//completeAssignment.clickUseThisText();
-		//testUtil.testWaitEight();	   
-	    testUtil.testWaitTwo();;
+	    }
+	    
+	    try {
+			   completeAssignment.clickUseThisTextOne();
+		    }catch(ElementClickInterceptedException e) {
+		    	e.printStackTrace();
+		    }
+		testUtil.testWaitEight();	   
+	    testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
@@ -110,19 +140,21 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitTwo();
 		completeAssignment.selectEndYear();
 		testUtil.testWaitTwo();
-		completeAssignment.selectEndYear();
-		testUtil.testWaitTwo();
+		//completeAssignment.selectEndYear();
+		//testUtil.testWaitTwo();
 		completeAssignment.selectEndDate();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
 		testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 		//NumberofHours
 		completeAssignment.selectNumberOfHours();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//selectWorkingThinkingLevel
 		completeAssignment.selectWorkingThinkingLevel();
 		testUtil.testWaitFour();
-		//Select FieldOfExpertise
+		//Select FieldOfExpertise/Descipline
 		completeAssignment.clickFieldOfExpertise();
 		testUtil.testWaitFour();
 		completeAssignment.selectFieldOfExpertise();
@@ -133,6 +165,25 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		//Add Skills and remove skills
+		completeAssignment.clickSkillsField();
+		testUtil.testWaitTwo();
+		completeAssignment.enterSkills("Security Management");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.enterSkills("Databases");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.enterSkills("Test Engineering");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.unSelectSkillsOne();
+		testUtil.testWaitTwo();
+		completeAssignment.unSelectSkillsTwo();
+		testUtil.testWaitTwo();
 		//completeAssignment.clickSaveButton();
 		
 	}
@@ -140,6 +191,7 @@ public class CompleteAssignmentTest extends TestBase {
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 
 }

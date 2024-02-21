@@ -38,8 +38,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
-		
-		
+			
 	}
 	
 	@Test

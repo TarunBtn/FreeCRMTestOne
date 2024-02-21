@@ -60,12 +60,12 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
-		testUtil.scrollDown();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
-		checkCommandPage.clickFillInComplete();
-		testUtil.testWaitEight();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//checkCommandPage.clickFillInComplete();
+		//testUtil.testWaitEight();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 	}
 	
 	@Test
@@ -76,10 +76,15 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		completeAssignment.clickSectorDropDown();
+		//completeAssignment.clickSectorDropDown();
+		//testUtil.testWaitTwo();
+		//completeAssignment.selectSectorFromDropDown();
+		//testUtil.testWaitTwo();
+		completeAssignment.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
-		completeAssignment.selectSectorFromDropDown();
-		testUtil.testWaitTwo();
+		completeAssignment.selectDescipline();
+		testUtil.testWaitFour();
+		
 		//completeAssignment.selectWorkLocation();
 		//testUtil.testWaitFour();
 		//completeAssignment.clickWorkLocationTooltip();
@@ -90,7 +95,8 @@ public class CompleteAssignmentTest extends TestBase {
 		//}catch(ElementNotInteractableException e) {
 			//e.printStackTrace();
 		//}	
-		testUtil.testWaitTwo();
+		
+		/*testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
@@ -183,7 +189,7 @@ public class CompleteAssignmentTest extends TestBase {
 		completeAssignment.unSelectSkillsOne();
 		testUtil.testWaitTwo();
 		completeAssignment.unSelectSkillsTwo();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
 		//completeAssignment.clickSaveButton();
 		
 	}

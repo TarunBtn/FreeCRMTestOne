@@ -27,7 +27,6 @@ public class CheckCommandPageTest extends TestBase{
 		super();
 	}
 	
-	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -47,9 +46,9 @@ public class CheckCommandPageTest extends TestBase{
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEleven();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
@@ -65,10 +64,10 @@ public class CheckCommandPageTest extends TestBase{
 		//testUtil.testWaitEight();
 	}
 	
-	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
 		
-	}	
+	}
+	
 }

@@ -31,7 +31,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		homePageAdmin.clickAllassignmentsTab();
 		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
@@ -62,6 +62,8 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		uLogoAllassignmentsPage.selectStatusDropDown();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 			
 	}

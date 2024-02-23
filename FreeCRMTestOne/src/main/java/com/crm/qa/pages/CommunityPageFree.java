@@ -44,7 +44,7 @@ public class CommunityPageFree extends TestBase{
 		@FindBy(xpath="//*[@id=\"toggle-saved\"]/button")
 		WebElement favoriteMessage;
 		
-		@FindBy(xpath="//*[@id=\"header\"]/div/div[2]/a[1]")
+		@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/a[1]")
 		WebElement myNetworkBtn;
 		
 		

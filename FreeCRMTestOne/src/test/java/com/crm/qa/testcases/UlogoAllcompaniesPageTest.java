@@ -36,7 +36,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
 		homePageAdmin.clickAllCompaniesTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();

@@ -35,8 +35,8 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
-		//homePageAdmin.clickAllCompaniesTab();
-		//testUtil.testWaitEight();
+		homePageAdmin.clickAllCompaniesTab();
+		testUtil.testWaitEight();
 		
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
@@ -47,9 +47,9 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 	
 	@Test
 	public void UlogoAllcompaniesPage()throws Exception {
-		System.out.println("Test is passed");
+		//System.out.println("Test is passed");
 		//Company verified
-		/*uLogoAllcompaniesPage.clickVerifiedCompanyDropDown();
+		uLogoAllcompaniesPage.clickVerifiedCompanyDropDown();
 		testUtil.testWaitTwo();
 		uLogoAllcompaniesPage.selectVerifiedCompany();
 		testUtil.testWaitEight();		
@@ -123,7 +123,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 			//testUtil.testWaitTwo();
 		//uLogoMycompanyPage.clickDeleteCompany();
 		uLogoMycompanyPage.clickCancelDelete();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 			//testUtil.testWaitEight();
 		//}else {
 			//System.out.println("Company name not exist");

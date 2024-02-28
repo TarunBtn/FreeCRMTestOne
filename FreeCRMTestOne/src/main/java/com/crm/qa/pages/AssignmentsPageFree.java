@@ -8,7 +8,7 @@ import com.crm.qa.base.TestBase;
 
 public class AssignmentsPageFree extends TestBase{
 	//Page factory OR Object Repository
-			@FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[1]/input")
+			@FindBy(xpath="//input[contains(@id, 'assignment')]")
 			WebElement enterValue;
 				
 			@FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[2]/a[1]/div[2]/div/div[1]/span/span")

@@ -34,7 +34,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitEight();
+		testUtil.testWaitEight();;
 		//homePageAdmin.clickAllCompaniesTab();
 		//testUtil.testWaitFourteen();
 		

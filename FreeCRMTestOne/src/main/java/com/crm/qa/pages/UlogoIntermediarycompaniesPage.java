@@ -30,7 +30,7 @@ public class UlogoIntermediarycompaniesPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[7]/div[2]/div/div")
 		WebElement sectorDropDown;
 		
-		@FindBy(xpath="//*[@id=\"sector-1\"]/span/span")
+		@FindBy(xpath="//span[contains(text(), 'Agrarisch')]")
 		WebElement selectSector;
 		
 		@FindBy(id="organisatie.websitelink")

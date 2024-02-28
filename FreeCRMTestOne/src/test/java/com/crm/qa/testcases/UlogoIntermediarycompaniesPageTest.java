@@ -41,7 +41,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		homePageAdmin.clickNativeCompanyTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
@@ -78,7 +78,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		uLogoIntermediarycompanyPage.clickSectorDropDown();
 		testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.selectSector();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		//Enter website

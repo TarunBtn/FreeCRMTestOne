@@ -33,6 +33,8 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
 		//homePageAdmin.clickAllassignmentsTab();
+		//testUtil.testWaitFourteen();
+		//testUtil.testWaitEleven();
 		//testUtil.testWaitEight();
 		
 		//homePageAdmin.moveHoverTologoImage();

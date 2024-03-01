@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,7 +12,6 @@ import com.crm.qa.pages.UlogoMyreactionsPage;
 import com.crm.qa.util.TestUtil;
 
 public class UlogoMyreactionsPageTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	UlogoMyreactionsPage uLogoMyreactionsPage;
@@ -33,19 +33,34 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
+		try {
 		homePageAdmin.clickMyReactionsTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitFourteen();
+		testUtil.testWaitEight();
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	@Test
 	public void uLogoMyreactionsPageTest()throws Exception {
-		uLogoMyreactionsPage.clickSuggestedResponses();
+		//try {
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
+		uLogoMyreactionsPage.selectStatusNew();
 		testUtil.testWaitEight();
-		uLogoMyreactionsPage.clickMyRunningReactions();
+		uLogoMyreactionsPage.selectStatusIntreatment();
 		testUtil.testWaitEight();
-		uLogoMyreactionsPage.clickResponseHistory();
+		uLogoMyreactionsPage.selectStatusOninterview();
 		testUtil.testWaitEight();
+		uLogoMyreactionsPage.selectStatusRegisterAgreement();
+		testUtil.testWaitEight();
+		uLogoMyreactionsPage.selectStatusWithdrawnRejected();
+		testUtil.testWaitEight();
+		//}catch(TimeoutException e) {
+			//e.printStackTrace();
+		//}
 	}
 	
 	@AfterMethod

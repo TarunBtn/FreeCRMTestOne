@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,9 +33,12 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFourteen();
-		//homePageAdmin.clickUserManagementTab();
-		//testUtil.testWaitEleven();
-		
+		try {
+		    homePageAdmin.clickUserManagementTab();
+		    testUtil.testWaitFourteen();
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
@@ -44,8 +48,8 @@ public class UlogoUsermanagementPageTest extends TestBase{
 	
 	@Test
 	public void uLogoUsermanagementPageTest()throws Exception {
-		System.out.println("Test is passed");
-		/*uLogoUsermanagementPage.enterSearchName("Ajay");
+		//System.out.println("Test is passed");
+		uLogoUsermanagementPage.enterSearchName("Ajay");
 		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
@@ -145,7 +149,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		uLogoUsermanagementPage.clickCancelSkills();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();*/
+		testUtil.testWaitTwo();
 		
 	}
 	

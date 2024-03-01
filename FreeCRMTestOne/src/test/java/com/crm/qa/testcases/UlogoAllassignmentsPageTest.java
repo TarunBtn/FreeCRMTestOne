@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,10 +33,13 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
-		//homePageAdmin.clickAllassignmentsTab();
-		//testUtil.testWaitFourteen();
-		//testUtil.testWaitEleven();
-		//testUtil.testWaitEight();
+		try {
+		    homePageAdmin.clickAllassignmentsTab();
+		    testUtil.testWaitFourteen();
+		
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
 		
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
@@ -44,8 +48,8 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 	
 	@Test
 	public void UlogoAllassignmentsPage()throws Exception {
-		System.out.println("Test is passed");
-		/*uLogoAllassignmentsPage.enterSearchCompany("QA EngineerEight");
+		//System.out.println("Test is passed");
+		uLogoAllassignmentsPage.enterSearchCompany("QA EngineerEight");
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
@@ -68,7 +72,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();*/
+		testUtil.testWaitTwo();
 			
 	}
 	

@@ -41,7 +41,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		homePageAdmin.clickNativeCompanyTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
@@ -53,7 +53,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 	@Test
 	public void UlogoIntermediarycompanyPage()throws Exception {
 		uLogoIntermediarycompanyPage.enterSearchCompany("SilverTouch");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//uLogoIntermediarycompanyPage.clickSearchCompany();
 		//testUtil.testWaitTwo();
 		//uLogoIntermediarycompanyPage.clickCancelSearch();

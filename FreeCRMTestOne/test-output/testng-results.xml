@@ -2,17 +2,17 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-28T14:53:05 IST" name="Default suite" finished-at="2024-02-28T14:53:05 IST" duration-ms="37">
+  <suite started-at="2024-03-01T12:37:34 IST" name="Default suite" finished-at="2024-03-01T12:37:34 IST" duration-ms="44">
     <groups>
     </groups>
-    <test started-at="2024-02-28T14:53:05 IST" name="Default test" finished-at="2024-02-28T14:53:05 IST" duration-ms="37">
-      <class name="com.crm.qa.testcases.UlogoAllassignmentsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.UlogoAllassignmentsPageTest@2d52216b]" started-at="2024-02-28T14:53:05 IST" name="setUp" finished-at="2024-02-28T14:53:05 IST" duration-ms="4" status="FAIL">
+    <test started-at="2024-03-01T12:37:34 IST" name="Default test" finished-at="2024-03-01T12:37:34 IST" duration-ms="44">
+      <class name="com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@2d52216b]" started-at="2024-03-01T12:37:34 IST" name="setUp" finished-at="2024-03-01T12:37:34 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
-at com.crm.qa.testcases.UlogoAllassignmentsPageTest.setUp(UlogoAllassignmentsPageTest.java:25)
+at com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest.setUp(UlogoIntermediarycompaniesPageTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,12 +51,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="UlogoAllassignmentsPage()[pri:0, instance:com.crm.qa.testcases.UlogoAllassignmentsPageTest@2d52216b]" started-at="2024-02-28T14:53:05 IST" name="UlogoAllassignmentsPage" finished-at="2024-02-28T14:53:05 IST" duration-ms="0" status="SKIP">
+        <test-method signature="UlogoIntermediarycompanyPage()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@2d52216b]" started-at="2024-03-01T12:37:34 IST" name="UlogoIntermediarycompanyPage" finished-at="2024-03-01T12:37:34 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
-at com.crm.qa.testcases.UlogoAllassignmentsPageTest.setUp(UlogoAllassignmentsPageTest.java:25)
+at com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest.setUp(UlogoIntermediarycompaniesPageTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,12 +94,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UlogoAllassignmentsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.UlogoAllassignmentsPageTest@2d52216b]" started-at="2024-02-28T14:53:05 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709112185666" status="SKIP">
+        </test-method> <!-- UlogoIntermediarycompanyPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest@2d52216b]" started-at="2024-03-01T12:37:34 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709276854875" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.UlogoAllassignmentsPageTest -->
+      </class> <!-- com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

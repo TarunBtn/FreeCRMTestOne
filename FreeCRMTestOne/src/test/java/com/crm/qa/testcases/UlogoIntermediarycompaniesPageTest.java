@@ -42,6 +42,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//testUtil.testWaitTwo();
 		homePageAdmin.clickNativeCompanyTab();
 		testUtil.testWaitFourteen();
+		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();

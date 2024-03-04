@@ -48,7 +48,7 @@ public class CompleteAssignmentTest extends TestBase {
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
 		testUtil.testWaitEight();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		//addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEight();
@@ -56,7 +56,7 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
@@ -70,7 +70,7 @@ public class CompleteAssignmentTest extends TestBase {
 	
 	@Test
 	public void completeAssignmentTest()throws Exception {
-		completeAssignment.clickCompanyDropDown();
+		/*completeAssignment.clickCompanyDropDown();
 		testUtil.testWaitTwo();
 		completeAssignment.selectCompany();
 		testUtil.testWaitFour();
@@ -150,12 +150,18 @@ public class CompleteAssignmentTest extends TestBase {
 		completeAssignment.selectNumberOfHours();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
+		testUtil.testWaitTwo();*/
+		completeAssignment.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
-		//selectWorkingThinkingLevel
-		completeAssignment.selectWorkingThinkingLevel();
+		completeAssignment.selectDesciplineDropDown();
 		testUtil.testWaitFour();
+		//selectWorkingThinkingLevel
+		//completeAssignment.selectWorkingThinkingLevel();
+		//testUtil.testWaitFour();
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEleven();
 		//Select FieldOfExpertise/Descipline
-		completeAssignment.clickFieldOfExpertise();
+		/*completeAssignment.clickFieldOfExpertise();
 		testUtil.testWaitFour();
 		completeAssignment.selectFieldOfExpertise();
 		testUtil.testWaitFour();
@@ -164,9 +170,9 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
 		//Add Skills and remove skills
-		completeAssignment.clickSkillsField();
+		/*completeAssignment.clickSkillsField();
 		testUtil.testWaitTwo();
 		completeAssignment.enterSkills("Security Management");
 		testUtil.testWaitFour();
@@ -183,7 +189,9 @@ public class CompleteAssignmentTest extends TestBase {
 		completeAssignment.unSelectSkillsOne();
 		testUtil.testWaitTwo();
 		completeAssignment.unSelectSkillsTwo();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
+		completeAssignment.clickNextOneButton();
+		testUtil.testWaitEight();
 		//completeAssignment.clickSaveButton();
 		
 	}

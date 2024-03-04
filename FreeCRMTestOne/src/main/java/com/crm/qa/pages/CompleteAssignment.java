@@ -39,7 +39,7 @@ public class CompleteAssignment extends TestBase{
 	@FindBy(xpath="/html/body/div[8]/div[1]/div/div/div/div[2]/div[3]/div/div[2]/div")
 	WebElement useThisTextOne;
 	
-	@FindBy(id="startdatumopdracht")
+	@FindBy(id="//*[@id=\"opdracht.startdatumopdracht\"]/div[1]/div/input")
 	WebElement clickStartDateDropDown;
 	
 	@FindBy(xpath="//*[@id=\"assignment\"]/div[7]/div/div/div/div[1]/button[4]/i")
@@ -63,14 +63,23 @@ public class CompleteAssignment extends TestBase{
 	@FindBy(xpath="//*[@id=\"uurtarief\"]/div/div[4]/div[1]")
 	WebElement hourlyRateFromTo;
 	
+	@FindBy(xpath="//*[@id=\"assignment-add\"]/span[2]/div/span/div[2]/form/div[7]/div[2]/div/div/div[1]")
+	WebElement desciplineDropDown;
+	
+	@FindBy(xpath="//*[@id=\"opdracht.vakgebied-6\"]/span/span")
+	WebElement selectDescipline;
+	
 	@FindBy(xpath="//*[@id=\"opleidingsniveau\"]")
 	WebElement workingThinkingLevel;
 	
 	@FindBy(xpath="//*[@id=\"opleidingsniveau\"]/option[5]")
 	WebElement selectWorkingThinkingLevel;
 	
-	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[24]/div/button[2]")
-	WebElement clickSaveButton;
+	@FindBy(xpath="//*[@id=\"assignment-add\"]/div[2]/span/div/div/div[2]/button")
+	WebElement clickNextButton;
+	
+	@FindBy(xpath="//*[@id=\"assignment-add\"]/div[2]/span/div/div/div[2]/button")
+	WebElement clickNextOneButton;
 	
 	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[20]/div[2]/div/div/div[1]")
 	WebElement clickFieldOfExpertise;
@@ -167,13 +176,25 @@ public class CompleteAssignment extends TestBase{
 		hourlyRateFromTo.click();
 	}
 	
+	public void clickDesciplineDropDown() {
+		desciplineDropDown.click();
+	}
+	
+	public void selectDesciplineDropDown() {
+		selectDescipline.click();
+	}
+	
 	public void selectWorkingThinkingLevel() {
 		Select oSelect=new Select(workingThinkingLevel);
 		oSelect.selectByIndex(4);
 	}
 	
-	public void clickSaveButton() {
-		clickSaveButton.click();
+	public void clickNextButton() {
+		clickNextButton.click();
+	}
+	
+	public void clickNextOneButton() {
+		clickNextOneButton.click();
 	}
 	
 	public void clickFieldOfExpertise() {

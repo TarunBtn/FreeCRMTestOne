@@ -32,7 +32,7 @@ public class MatchPageTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePage.clickMatchLink();
-		testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 				
 	}
 	
@@ -127,31 +127,11 @@ public class MatchPageTest extends TestBase{
 		}
 		//matchPage.clickSkillTab();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
 		matchPage.clickResetFilterSkill();
 		testUtil.testWaitEight();
-		//matchPage.clickSkillTab();
-		//testUtil.testWaitTwo();
-		//matchPage.clickCancelSkill();
-		//testUtil.testWaitTwo();
-		testUtil.scrollUp();
+		matchPage.clickSkillTab();
 		testUtil.testWaitTwo();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
-		testUtil.scrollUp();
+		matchPage.clickCancelSkill();
 		testUtil.testWaitTwo();
 		//Stored
 		matchPage.clickStored();

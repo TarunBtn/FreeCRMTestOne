@@ -27,6 +27,7 @@ public class CheckCommandPageTest extends TestBase{
 		super();
 	}
 	
+	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -63,6 +64,7 @@ public class CheckCommandPageTest extends TestBase{
 		//checkCommandPage.clickFillInComplete();
 		//testUtil.testWaitEight();
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {

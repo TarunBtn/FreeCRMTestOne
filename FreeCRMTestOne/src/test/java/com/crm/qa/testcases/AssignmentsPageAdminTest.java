@@ -12,7 +12,6 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
 public class AssignmentsPageAdminTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	AssignmentsPageFree assignmentsPageFree;
@@ -146,6 +145,8 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	testUtil.testWaitTwo();
 	  	assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
 	  	testUtil.testWaitFour();
+	  	assignmentsPageFree.enterLocationToolTip();
+	  	testUtil.testWaitFour();
 	  	assignmentsPageFree.applyLocationFilter();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickLocationTab();
@@ -161,7 +162,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	assignmentsPageFree.clickFavorites();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickFavorites();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	//Sorting
 	  	assignmentsPageFree.clickSortingDropDown();
 	  	testUtil.testWaitTwo();
@@ -180,6 +181,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	@AfterMethod
 	public void tearDown(){
 		Driver.quit();
+		
 	}
 
 }

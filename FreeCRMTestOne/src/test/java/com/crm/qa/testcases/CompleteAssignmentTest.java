@@ -56,16 +56,16 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
+		testUtil.uploadFile("D:\\Testfile.docx");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
-		testUtil.scrollUp();
+		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		//checkCommandPage.clickFillInComplete();
-		//testUtil.testWaitEight();
-		//testUtil.scrollDown();
-		//testUtil.testWaitFour();
+		checkCommandPage.clickFillInComplete();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
 	}
 	
 	@Test
@@ -76,15 +76,10 @@ public class CompleteAssignmentTest extends TestBase {
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		//completeAssignment.clickSectorDropDown();
-		//testUtil.testWaitTwo();
-		//completeAssignment.selectSectorFromDropDown();
-		//testUtil.testWaitTwo();
-		completeAssignment.clickDesciplineDropDown();
+		completeAssignment.clickSectorDropDown();
 		testUtil.testWaitTwo();
-		completeAssignment.selectDescipline();
-		testUtil.testWaitFour();
-		
+		completeAssignment.selectSectorFromDropDown();
+		testUtil.testWaitTwo();
 		//completeAssignment.selectWorkLocation();
 		//testUtil.testWaitFour();
 		//completeAssignment.clickWorkLocationTooltip();
@@ -95,8 +90,7 @@ public class CompleteAssignmentTest extends TestBase {
 		//}catch(ElementNotInteractableException e) {
 			//e.printStackTrace();
 		//}	
-		
-		/*testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
@@ -189,7 +183,7 @@ public class CompleteAssignmentTest extends TestBase {
 		completeAssignment.unSelectSkillsOne();
 		testUtil.testWaitTwo();
 		completeAssignment.unSelectSkillsTwo();
-		testUtil.testWaitTwo();*/
+		testUtil.testWaitTwo();
 		//completeAssignment.clickSaveButton();
 		
 	}
@@ -199,5 +193,4 @@ public class CompleteAssignmentTest extends TestBase {
 		Driver.quit();
 		
 	}
-
 }

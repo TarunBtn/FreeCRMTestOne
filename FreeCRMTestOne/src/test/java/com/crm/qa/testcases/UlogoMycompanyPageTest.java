@@ -11,7 +11,6 @@ import com.crm.qa.pages.UlogoMycompanyPage;
 import com.crm.qa.util.TestUtil;
 
 public class UlogoMycompanyPageTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
 	TestUtil testUtil;
@@ -55,7 +54,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMycompanyPage.clickSectorDropDown();
 		testUtil.testWaitFour();
 		uLogoMycompanyPage.selectSector();

@@ -46,7 +46,7 @@ public class CommunityPageAdminTest extends TestBase{
 		communityPageFree.enterValueFilter("Hr");
 		testUtil.testWaitEight();
 		communityPageFree.clickCancelSign();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		//Type of message
 		communityPageFree.clickTypeOfMessageDropDown();
 		testUtil.testWaitTwo();

@@ -36,7 +36,6 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		try {
 		    homePageAdmin.clickAllassignmentsTab();
 		    testUtil.testWaitFourteen();
-		
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
@@ -49,6 +48,9 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 	@Test
 	public void UlogoAllassignmentsPage()throws Exception {
 		//System.out.println("Test is passed");
+		testUtil.testWaitTwo();
+		uLogoAllassignmentsPage.clickSearchCompanyField();
+		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.enterSearchCompany("QA EngineerEight");
 		testUtil.testWaitFour();
 		testUtil.scrollDown();

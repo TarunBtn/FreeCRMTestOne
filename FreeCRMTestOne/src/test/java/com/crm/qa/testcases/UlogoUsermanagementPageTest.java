@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 	HomePageAdmin homePageAdmin;
 	UlogoUsermanagementPage uLogoUsermanagementPage;
 	TestUtil testUtil;
+	WebDriverWait wait;
 	
 	public UlogoUsermanagementPageTest() {
 		super();
@@ -32,23 +34,29 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitFourteen();
+		testUtil.testWaitEight();
 		try {
 		    homePageAdmin.clickUserManagementTab();
 		    testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
+		
+		//testUtil.testWaitEleven();
+		//testUtil.testWaitEight();
+		//wait.until(ExpectedConditions.elementToBeClickable("searchName"));
+		//testUtil.testRefresh();
+		//testUtil.testWaitFourteen();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
-		//testUtil.scrollDown();
-		//testUtil.testWaitTwo();
-			
+		
 	}
 	
 	@Test
 	public void uLogoUsermanagementPageTest()throws Exception {
 		//System.out.println("Test is passed");
+		uLogoUsermanagementPage.clickSearchName();
+		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.enterSearchName("Ajay");
 		testUtil.testWaitEight();
 		testUtil.scrollDown();

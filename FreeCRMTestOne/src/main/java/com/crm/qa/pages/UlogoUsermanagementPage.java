@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,18 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 import com.crm.qa.base.TestBase;
 
 public class UlogoUsermanagementPage extends TestBase{
-
 	//Pagefactory OR Object Repository
-	@FindBy(xpath="(//input[@id='filter-input'])[1]")
+	@FindBy(xpath="//input[contains(@placeholder,\"Type om te zoeken naam\")]")
 	WebElement searchName;
 	
-	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[1]/div/div/div/div/button")
+	@FindBy(xpath="//*[@id=\"__BVID__19\"]/div/div/div/button")
 	WebElement resetSearchName;
 	
 	@FindBy(xpath="(//input[@id='filter-input'])[2]")
 	WebElement emailAddress;
 	
-	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div/div/button")
+	@FindBy(xpath="//*[@id=\"__BVID__26\"]/div/div/div/button")
 	WebElement resetEmailAddress;
 	
 	@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div/div[1]/div[3]/div/label")
@@ -48,13 +48,13 @@ public class UlogoUsermanagementPage extends TestBase{
 	@FindBy(xpath="//*[@id=\"dropdown-vakgebied-profile\"]/div/form/div[7]/label")
 	WebElement selectDescipline;
 	
-	@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div/div[2]/div[3]/div/label")
+	@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div/div[1]/div[9]/div/label")
 	WebElement elevatorPitch;
 	
 	@FindBy(id="dropdown-skills-btn")
 	WebElement skillsTab;
 	
-	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/div[1]/input")
+	@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/input")
 	WebElement enterValueSkills;
 	
 	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/div[2]/a/div[2]/span/span")
@@ -76,6 +76,10 @@ public class UlogoUsermanagementPage extends TestBase{
 	}
 	
 	//Actions
+    public void clickSearchName()throws Exception {
+		searchName.click();	
+	}
+
 	public void enterSearchName(String value) {
 		searchName.sendKeys(value);
 	}
@@ -137,11 +141,13 @@ public class UlogoUsermanagementPage extends TestBase{
 	}
 	
 	public void enterValueSkills(String value) {
+		enterValueSkills.click();
 		enterValueSkills.sendKeys(value);
 	}
 	
 	public void selectTooltipSkills() {
-		selectTooltipSkills.click();
+		//selectTooltipSkills.click();
+		enterValueSkills.sendKeys(Keys.TAB);
 	}
 	
 	public void clickApplyFilterSkills() {

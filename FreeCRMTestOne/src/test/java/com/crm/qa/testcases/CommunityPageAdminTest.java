@@ -34,7 +34,7 @@ public class CommunityPageAdminTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickCommunityPageAdmin();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 						
 	}
 	
@@ -46,7 +46,7 @@ public class CommunityPageAdminTest extends TestBase{
 		communityPageFree.enterValueFilter("Hr");
 		testUtil.testWaitEight();
 		communityPageFree.clickCancelSign();
-		testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 		//Type of message
 		communityPageFree.clickTypeOfMessageDropDown();
 		testUtil.testWaitTwo();
@@ -88,7 +88,6 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
-		
 				
 	}
 	

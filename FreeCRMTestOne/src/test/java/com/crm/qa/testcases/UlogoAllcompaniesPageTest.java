@@ -36,7 +36,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
-		try{
+		try {
 		    homePageAdmin.clickAllCompaniesTab();
 		    testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {

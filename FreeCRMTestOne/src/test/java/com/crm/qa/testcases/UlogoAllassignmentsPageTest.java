@@ -35,11 +35,11 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitEight();
 		try {
 		    homePageAdmin.clickAllassignmentsTab();
-		    testUtil.testWaitFourteen();
+		    //testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		
+		testUtil.testWaitFour();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		
@@ -48,11 +48,10 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 	@Test
 	public void UlogoAllassignmentsPage()throws Exception {
 		//System.out.println("Test is passed");
-		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.clickSearchCompanyField();
 		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.enterSearchCompany("QA EngineerEight");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		testUtil.scrollUp();

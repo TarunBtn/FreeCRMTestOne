@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.crm.qa.base.TestBase;
 
+
 public class HomePageAdmin extends TestBase{
 	//Page factory OR Object repository
 	@FindBy(xpath="//span[contains(@class, 'flex')]")
@@ -14,7 +15,7 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")
 	WebElement communityTab;
 		
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
+	@FindBy(xpath="//a[@href='/ondernemer']")
 	WebElement matchTab;
 		
 	@FindBy(xpath="/html/body/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")

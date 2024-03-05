@@ -32,7 +32,7 @@ public class MatchPageAdminTest extends TestBase{
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageAdmin.clickMatchTab();
-		testUtil.testWaitEleven();	
+		testUtil.testWaitFourteen();	
 		
 	}
 	

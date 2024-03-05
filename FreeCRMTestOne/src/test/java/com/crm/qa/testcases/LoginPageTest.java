@@ -28,22 +28,22 @@ public class LoginPageTest extends TestBase{
 		testUtil=new TestUtil();
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void loginPageTitleTest() {
 		String title=loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Log in | Younited® platform");
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void imageLogoTest() {
 		boolean flag=loginPage.validateImageLogo();
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority=3)
+	@Test
 	public void loginTest()throws Exception {
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

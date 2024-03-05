@@ -37,7 +37,7 @@ public class CommunityPageFreeTest extends TestBase{
 		homePageFree.suitableAssignments();
 		testUtil.testWaitEight();
 		homePageFree.clickNetworkTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		homePageFree.clickNetworkTabTooltip();
 		testUtil.testWaitFour();
 								

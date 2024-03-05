@@ -11,7 +11,6 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
 public class AssignmentsPageFreeTest extends TestBase{
-	
 	LoginPage loginPage;
 	HomePageFree homePageFree;
 	AssignmentsPageFree assignmentsPageFree;
@@ -141,6 +140,8 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
 		testUtil.testWaitFour();
+		assignmentsPageFree.enterLocationToolTip();
+		testUtil.testWaitFour();
 		assignmentsPageFree.applyLocationFilter();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickLocationTab();
@@ -180,6 +181,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}	
 
 }

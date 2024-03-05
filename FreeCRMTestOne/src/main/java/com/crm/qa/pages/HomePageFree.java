@@ -17,10 +17,10 @@ public class HomePageFree extends TestBase{
 	@FindBy(xpath="//button[@data-cookiefirst-button='primary']")
 	WebElement acceptAllCookies;
 	
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul[1]/li[3]/a/span")
+	@FindBy(xpath="//span[contains(@class, 'items-center')]")
 	WebElement networkTab;
 	
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a/ul/li[1]/a")
+	@FindBy(xpath="//a[@href='/community' and @class='nav-link']")
 	WebElement networkTooltip;
 	
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a/ul/li[2]/a")
@@ -44,7 +44,7 @@ public class HomePageFree extends TestBase{
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/a/img[1]")
 	WebElement logoImage;
 	
-	@FindBy(xpath="//*[@id=\"lead-reaction-modal___BV_modal_body_\"]/div[2]/button")
+	@FindBy(xpath="//button[contains(@class, 'close')]")
 	WebElement suitableAssignments;
 	
 		

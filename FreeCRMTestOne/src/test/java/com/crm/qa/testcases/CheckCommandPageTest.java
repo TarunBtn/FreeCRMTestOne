@@ -27,7 +27,6 @@ public class CheckCommandPageTest extends TestBase{
 		super();
 	}
 	
-	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();

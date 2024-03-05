@@ -32,20 +32,20 @@ public class StorePageFreeTest extends TestBase{
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 		homePageFree.suitableAssignments();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		homePageFree.clickNetworkTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		homePageFree.clickStoreTooltip();
 		testUtil.testWaitEleven();
-		testUtil.testWaitEight();
-		testUtil.testWaitEleven();
+		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
 		
 	}
 	
 	@Test
 	public void clickStoreTab()throws Exception {
 		storePageFree.clickAllTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		//testUtil.scrollDown();
@@ -59,9 +59,9 @@ public class StorePageFreeTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		//storePageFree.clickMoreInformationAll();
-		testUtil.testWaitFour();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitFour();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
 		//storePageFree.clickBackToAllProductsLink();

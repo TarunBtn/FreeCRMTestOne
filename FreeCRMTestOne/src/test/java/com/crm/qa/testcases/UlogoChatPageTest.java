@@ -45,7 +45,7 @@ public class UlogoChatPageTest extends TestBase{
 	
 	@Test
 	public void chatPage() {
-		
+		System.out.println("Test passed");
 	}
 	
 	@AfterMethod

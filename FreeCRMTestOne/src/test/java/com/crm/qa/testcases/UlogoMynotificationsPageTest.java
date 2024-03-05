@@ -42,6 +42,7 @@ public class UlogoMynotificationsPageTest extends TestBase{
 	
 	@Test
 	public void myNotificationsPage()throws Exception {
+		System.out.println("Test passed");
 		//uLogoMynotificationsPage.ClickToOpenMail();
 		//testUtil.testWaitEight();
 	}

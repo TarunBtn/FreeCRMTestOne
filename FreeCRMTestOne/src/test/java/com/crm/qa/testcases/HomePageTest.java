@@ -15,8 +15,7 @@ import com.crm.qa.pages.MyAssignmentsPage;
 import com.crm.qa.util.TestUtil;
 
 
-public class HomePageTest extends TestBase{
-	
+public class HomePageTest extends TestBase{	
 	LoginPage loginPage;
 	HomePage homePage;
 	HomePageFree homePageFree;
@@ -35,7 +34,7 @@ public class HomePageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
 				

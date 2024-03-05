@@ -29,7 +29,7 @@ public class HomePageFree extends TestBase{
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
 	WebElement communityTab;
 	
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul[1]/li[6]/a")
+	@FindBy(xpath="//a[@href='/community-volgers']")
 	WebElement entrepreneurTab;
 	
 	@FindBy(xpath="//a[contains(@href, '/bedrijven')]")
@@ -109,6 +109,6 @@ public class HomePageFree extends TestBase{
 	public void mouseHoverToLogoImage() {
 		Actions builder=new Actions(Driver);
 		builder.moveToElement(logoImage).build().perform();
-	}	
+	}
 
 }

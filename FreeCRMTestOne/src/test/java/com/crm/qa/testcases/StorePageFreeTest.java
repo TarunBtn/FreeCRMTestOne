@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,7 +32,11 @@ public class StorePageFreeTest extends TestBase{
 		testUtil.testWaitFourteen();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
-		homePageFree.suitableAssignments();
+		try {
+		    homePageFree.suitableAssignments();
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
 		testUtil.testWaitFour();
 		homePageFree.clickNetworkTab();
 		testUtil.testWaitFour();

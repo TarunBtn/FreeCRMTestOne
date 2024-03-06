@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,8 +32,12 @@ public class BusinessesPageFreeTest extends TestBase{
 		testUtil.testWaitFourteen();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
-		homePageFree.suitableAssignments();
-		testUtil.testWaitEleven();
+		try {
+		    homePageFree.suitableAssignments();
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		testUtil.testWaitFour();
 		//testUtil.testWaitFour();
 		try {
 		    homePageFree.clickBusinessesTab();

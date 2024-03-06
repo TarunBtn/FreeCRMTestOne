@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.crm.qa.base.TestBase;
 
+
 public class HomePageFree extends TestBase{
 	//Page factory OR Object repository
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")

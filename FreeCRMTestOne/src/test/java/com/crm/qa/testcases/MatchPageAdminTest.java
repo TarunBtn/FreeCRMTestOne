@@ -37,7 +37,7 @@ public class MatchPageAdminTest extends TestBase{
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitFour();	
+		testUtil.testWaitEleven();	
 		
 	}
 	
@@ -45,7 +45,7 @@ public class MatchPageAdminTest extends TestBase{
 	public void match()throws Exception {
 		//Value Filter
 		matchPageAdmin.clickValueFilter();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEleven();
 		matchPageAdmin.enterValueFilter("Ajay");
 		testUtil.testWaitEight();
 		matchPageAdmin.clickCancelValueFilter();

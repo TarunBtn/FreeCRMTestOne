@@ -35,32 +35,37 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		try {
 		homePageAdmin.clickMyReactionsTab();
-		testUtil.testWaitFourteen();
-		testUtil.testWaitEight();
+		//testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
+		testUtil.testWaitFour();
 		
 	}
 	
 	@Test
 	public void uLogoMyreactionsPageTest()throws Exception {
-		//try {
 		uLogoMyreactionsPage.clickStatusDropDown();
 		testUtil.testWaitFour();
 		uLogoMyreactionsPage.selectStatusNew();
 		testUtil.testWaitEight();
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
 		uLogoMyreactionsPage.selectStatusIntreatment();
 		testUtil.testWaitEight();
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
 		uLogoMyreactionsPage.selectStatusOninterview();
 		testUtil.testWaitEight();
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
 		uLogoMyreactionsPage.selectStatusRegisterAgreement();
 		testUtil.testWaitEight();
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
 		uLogoMyreactionsPage.selectStatusWithdrawnRejected();
 		testUtil.testWaitEight();
-		//}catch(TimeoutException e) {
-			//e.printStackTrace();
-		//}
+		
 	}
 	
 	@AfterMethod

@@ -8,22 +8,22 @@ import com.crm.qa.base.TestBase;
 
 public class UlogoMyreactionsPage extends TestBase{
 	//Page factory OR Object Repository
-	@FindBy(xpath="//input[contains(@id,'status')]")
+	@FindBy(xpath="//div[@class='multiselect__select']")
 	WebElement clickStatusDropDown;
 	
-	@FindBy(xpath="//li[contains(@id, 'status-1')]")
+	@FindBy(xpath="//span[text()='Nieuw']")
 	WebElement selectStatusNew;
 	
-	@FindBy(xpath="//li[contains(@id, 'status-2')]")
+	@FindBy(xpath="//span[text()='In behandeling']")
 	WebElement selectStatusIntreatment;
 	
-	@FindBy(xpath="//li[contains(@id, 'status-3')]")
+	@FindBy(xpath="//span[text()='Op gesprek']")
 	WebElement selectStatusOninterview;
 	
-	@FindBy(xpath="//li[contains(@id, 'status-4')]")
+	@FindBy(xpath="//span[text()='Overeenkomst aanmelden']")
 	WebElement selectStatusRegisteragreement;
 	
-	@FindBy(xpath="//li[contains(@id, 'status-5')]")
+	@FindBy(xpath="//span[text()='Ingetrokken/afgewezen']")
 	WebElement selectStatusWithdrawnRejected;
 	
 	//Initialization

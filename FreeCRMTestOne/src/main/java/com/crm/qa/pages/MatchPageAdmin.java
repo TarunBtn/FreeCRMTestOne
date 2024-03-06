@@ -90,10 +90,10 @@ public class MatchPageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"dropdown-skills\"]/div/form/div[4]/button")
 	WebElement applyFilterSkill;
 			
-	@FindBy(xpath="//*[@id=\"dropdown-skills\"]/div/form/div[4]/a[2]")
+	@FindBy(linkText="Extra Filters wissen")
 	WebElement resetFilterSkill;
 			
-	@FindBy(xpath="//*[@id=\"dropdown-skills\"]/div/form/div[4]/a[1]")
+	@FindBy(xpath="//a[text()='Annuleren']")
 	WebElement cancelSkill;
 			
 	@FindBy(xpath="//*[@id=\"toggle-saved\"]/button")

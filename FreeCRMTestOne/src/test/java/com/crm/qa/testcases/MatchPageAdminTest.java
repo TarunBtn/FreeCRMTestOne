@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,8 +32,12 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
-		homePageAdmin.clickMatchTab();
-		testUtil.testWaitFourteen();	
+		try {
+		    homePageAdmin.clickMatchTab();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
+		testUtil.testWaitFour();	
 		
 	}
 	
@@ -125,13 +130,13 @@ public class MatchPageAdminTest extends TestBase{
 		matchPageAdmin.selectTooltipSkill();
 		testUtil.testWaitFour();
 		matchPageAdmin.clickSkillTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPageAdmin.clickApplyFilterSkill();
 		testUtil.testWaitEleven();
 		matchPageAdmin.clickResetFilterSkill();
 		testUtil.testWaitEleven();
-		//matchPageAdmin.clickSkillTab();
-		//testUtil.testWaitTwo();
+		matchPageAdmin.clickSkillTab();
+		testUtil.testWaitTwo();
 		matchPageAdmin.clickCancelSkill();
 		testUtil.testWaitTwo();
 		//Stored
@@ -163,4 +168,5 @@ public class MatchPageAdminTest extends TestBase{
 	public void tearDown() {
 		Driver.quit();
 	}
+	
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.MatchPageAdminTest">
+      <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest">
         <methods>
-          <include name="match"/>
-          <include name="setUp"/>
+          <include name="entrepreneurPageFilter"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.MatchPageAdminTest -->
+      </class> <!-- com.crm.qa.testcases.EntrepreneursPageFreeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

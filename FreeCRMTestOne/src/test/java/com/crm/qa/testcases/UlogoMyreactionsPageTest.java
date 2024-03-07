@@ -39,14 +39,14 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
 	@Test
 	public void uLogoMyreactionsPageTest()throws Exception {
 		uLogoMyreactionsPage.clickStatusDropDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		uLogoMyreactionsPage.selectStatusNew();
 		testUtil.testWaitEight();
 		uLogoMyreactionsPage.clickStatusDropDown();

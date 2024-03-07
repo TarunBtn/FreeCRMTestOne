@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -35,7 +36,8 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		try {
 		    homePageAdmin.clickMyReactionsTab();
-		}catch(TimeoutException e) {
+		    testUtil.testWaitFourteen();
+		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
 		testUtil.testWaitEight();

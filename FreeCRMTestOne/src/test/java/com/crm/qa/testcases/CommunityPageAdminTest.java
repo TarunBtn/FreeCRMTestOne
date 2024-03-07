@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -37,7 +38,7 @@ public class CommunityPageAdminTest extends TestBase{
 		try {
 		    homePageAdmin.clickCommunityPageAdmin();
 		    testUtil.testWaitFourteen();
-		}catch(NoSuchElementException e) {
+		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
 		testUtil.testWaitEleven();

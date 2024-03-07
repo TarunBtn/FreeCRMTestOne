@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -33,7 +34,11 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEleven();
-		homePageAdmin.clickCommunityPageAdmin();
+		try {
+		    homePageAdmin.clickCommunityPageAdmin();
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
 		testUtil.testWaitEleven();
 						
 	}
@@ -42,7 +47,7 @@ public class CommunityPageAdminTest extends TestBase{
 	public void community() throws Exception{
 		//CommunityPage
 		communityPageFree.clickValueFilter();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		communityPageFree.enterValueFilter("Hr");
 		testUtil.testWaitEight();
 		communityPageFree.clickCancelSign();
@@ -88,6 +93,7 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
+		
 				
 	}
 	

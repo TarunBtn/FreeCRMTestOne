@@ -11,7 +11,7 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//span[contains(@class, 'flex')]")
 	WebElement assignmentsTab;
 		
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")
+	@FindBy(xpath="//a[@href='/community']")
 	WebElement communityTab;
 		
 	@FindBy(xpath="//a[@href='/ondernemer']")

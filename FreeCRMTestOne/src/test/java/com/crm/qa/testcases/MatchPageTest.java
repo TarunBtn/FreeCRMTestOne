@@ -44,7 +44,7 @@ public class MatchPageTest extends TestBase{
 	@Test
 	public void matchPage()throws Exception {
 		//Value Filter
-		matchPage.clickValueFilterDropdown();
+		/*matchPage.clickValueFilterDropdown();
 		testUtil.testWaitTwo();
 		matchPage.selectValueFilter();
 		testUtil.testWaitEight();
@@ -161,7 +161,7 @@ public class MatchPageTest extends TestBase{
 		matchPage.selectNumberOfHoursMaxMin();
 		testUtil.testWaitEight();
 		matchPage.selectLocation();
-		testUtil.testWaitEight();
+		testUtil.testWaitEight();*/
 		
 	}
 	

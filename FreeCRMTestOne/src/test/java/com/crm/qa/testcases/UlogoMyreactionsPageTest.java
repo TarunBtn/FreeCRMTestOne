@@ -34,8 +34,7 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		try {
-		homePageAdmin.clickMyReactionsTab();
-		//testUtil.testWaitFourteen();
+		    homePageAdmin.clickMyReactionsTab();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}

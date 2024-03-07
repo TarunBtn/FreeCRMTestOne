@@ -36,7 +36,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		}catch(NoSuchElementException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageFree.clickEntrepreneurTab();
 		testUtil.testWaitFourteen();
 				
@@ -45,9 +45,9 @@ public class EntrepreneursPageFreeTest extends TestBase{
 	@Test
 	public void entrepreneurPageFilter()throws Exception {
 		entrepreneursPageFree.enterEntrepreneur("Ajay");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickCancel();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//Working/Thinking level
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();

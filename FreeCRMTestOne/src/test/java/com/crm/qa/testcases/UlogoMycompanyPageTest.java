@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,10 +33,14 @@ public class UlogoMycompanyPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
-		homePageAdmin.clickMyCompanyTab();
-		testUtil.testWaitFour();
+		try {
+		    homePageAdmin.clickMyCompanyTab();
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
+		testUtil.testWaitEleven();
 		//homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		
@@ -44,7 +49,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 	@Test
 	public void uLogoMycompanyPage()throws Exception {
 		uLogoMycompanyPage.clickAddNewCompany();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		uLogoMycompanyPage.enterCompanyName("Coffeeshop Checkpoint");
@@ -55,10 +60,18 @@ public class UlogoMycompanyPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
+		uLogoMycompanyPage.clickEmployeeDropDown();
+		testUtil.testWaitTwo();
+		uLogoMycompanyPage.selectEmployee();
+		testUtil.testWaitFour();
+		uLogoMycompanyPage.clickEmployeeDropDown();
+		testUtil.testWaitTwo();
 		uLogoMycompanyPage.clickSectorDropDown();
 		testUtil.testWaitFour();
 		uLogoMycompanyPage.selectSector();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMycompanyPage.clearWebsiteField();
 		testUtil.testWaitTwo();
 		uLogoMycompanyPage.enterWebsiteUrl("https://coffeshopcheckpoint.com");

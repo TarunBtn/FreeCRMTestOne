@@ -35,11 +35,11 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitEight();
 		try {
 		    homePageAdmin.clickAllassignmentsTab();
-		    //testUtil.testWaitFourteen();
+		    testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		

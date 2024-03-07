@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -37,7 +38,12 @@ public class EntrepreneursPageFreeTest extends TestBase{
 			e.printStackTrace();
 		}
 		testUtil.testWaitEight();
-		homePageFree.clickEntrepreneurTab();
+		try {
+		    homePageFree.clickEntrepreneurTab();
+		    testUtil.testWaitFourteen();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		testUtil.testWaitFourteen();
 				
 	}

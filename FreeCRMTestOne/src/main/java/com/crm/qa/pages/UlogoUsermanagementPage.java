@@ -60,7 +60,7 @@ public class UlogoUsermanagementPage extends TestBase{
 	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/div[2]/a/div[2]/span/span")
 	WebElement selectTooltipSkills;
 	
-	@FindBy(xpath="//*[@id=\"dropdown-user-profile\"]/div/form/div[4]/button")
+	@FindBy(xpath="//button[@class='btn btn-primary']")
 	WebElement clickApplyFilterSkills;
 	
 	@FindBy(xpath="//*[@id=\"dropdown-user-profile\"]/div/form/div[4]/a[2]")

@@ -41,8 +41,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 		//testUtil.testWaitEight();
 		//wait.until(ExpectedConditions.elementToBeClickable("searchName"));
 		//testUtil.testRefresh();
@@ -56,7 +55,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 	public void uLogoUsermanagementPageTest()throws Exception {
 		//System.out.println("Test is passed");
 		uLogoUsermanagementPage.clickSearchName();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		uLogoUsermanagementPage.enterSearchName("Ajay");
 		testUtil.testWaitEight();
 		testUtil.scrollDown();

@@ -35,6 +35,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 		testUtil.testWaitFour();
 		try {
 		    homePageAdmin.clickMyCompanyTab();
+		    testUtil.testWaitFourteen();
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
@@ -53,7 +54,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		uLogoMycompanyPage.enterCompanyName("Coffeeshop Checkpoint");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		uLogoMycompanyPage.clickCompanyNameTooltip();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();

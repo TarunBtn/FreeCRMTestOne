@@ -39,7 +39,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		
@@ -49,7 +49,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 	public void UlogoAllassignmentsPage()throws Exception {
 		//System.out.println("Test is passed");
 		uLogoAllassignmentsPage.clickSearchCompanyField();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		uLogoAllassignmentsPage.enterSearchCompany("QA EngineerEight");
 		testUtil.testWaitEight();
 		testUtil.scrollDown();

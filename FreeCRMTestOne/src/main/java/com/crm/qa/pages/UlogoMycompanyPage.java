@@ -9,7 +9,10 @@ import com.crm.qa.base.TestBase;
 
 public class UlogoMycompanyPage extends TestBase{
 	//Pagefactory OR Object Repository
-		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div[1]/a")
+		@FindBy(xpath="//input[@class='form-control']")
+		WebElement searchCompany;
+		
+		@FindBy(xpath="//a[@class='btn btn-primary-outline']")
 		WebElement addNewCompany;
 		
 		@FindBy(id="bedrijfsnaam")
@@ -54,6 +57,10 @@ public class UlogoMycompanyPage extends TestBase{
 		}
 		
 		//Action
+		public void enterSearchCompany(String value) {
+			searchCompany.sendKeys(value);
+		}
+		
 		public void clickAddNewCompany() {
 			addNewCompany.click();
 		}

@@ -17,10 +17,10 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//a[@href='/ondernemer']")
 	WebElement matchTab;
 		
-	@FindBy(xpath="/html/body/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
+	@FindBy(xpath="//button[@data-cookiefirst-action='accept']")
 	WebElement acceptAllCookies;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/button/img")
+	@FindBy(xpath="//img[@class='profile-img']")
 	WebElement userLogo;
 	
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[1]/li[1]/a")
@@ -41,10 +41,10 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[3]")
 	WebElement myNotificationsTab;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[1]/a")
+	@FindBy(xpath="//a[@class='manage-profile-button']")
 	WebElement myProfileTab;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[2]/li/a")
+	@FindBy(xpath="//a[@href='/mijn-opdrachten/']")
 	WebElement myAssignmentsTab;
 	
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/button/img")
@@ -59,19 +59,19 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//a[@href='/mijn-reacties/']")
 	WebElement myReactionsTab;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/header/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[5]/li/a")
+	@FindBy(xpath="//a[@href='/gebruikers']")
 	WebElement userManagementTab;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[6]/li/a")
+	@FindBy(xpath="//a[@href='/alle-bedrijven']")
 	WebElement allCompanies;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[10]/li[1]/a")
+	@FindBy(xpath="//a[@href='/netive-bedrijven']")
 	WebElement nativeCompany;
 	
 	@FindBy(xpath="//a[@href='/alleopdrachten/']")
 	WebElement allAssignments;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[8]/li[1]/a")
+	@FindBy(xpath="//a[@href='/profielstatistieken']")
 	WebElement profileStatistics;
 	
 	@FindBy(xpath="//a[@href='/netive-opdrachten']")

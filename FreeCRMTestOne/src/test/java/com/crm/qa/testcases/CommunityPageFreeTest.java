@@ -44,18 +44,18 @@ public class CommunityPageFreeTest extends TestBase{
 		homePageFree.clickNetworkTab();
 		testUtil.testWaitFour();
 		homePageFree.clickNetworkTabTooltip();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 								
 	}
 	
 	@Test
 	public void communityPageFreeTest()throws Exception {
 		communityPageFree.clickTypeOfMessageDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		communityPageFree.selectTypeOfMessage();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		communityPageFree.selectTypeOfMessage();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		communityPageFree.clickTypeOfMessageDropDown();
 		testUtil.testWaitFour();
 		communityPageFree.clickAreaOfInterestDropDown();
@@ -99,8 +99,7 @@ public class CommunityPageFreeTest extends TestBase{
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
 		//communityPageFree.clickMyNetworkBtn();
-				
-		
+					
 	}
 	
 	@AfterMethod

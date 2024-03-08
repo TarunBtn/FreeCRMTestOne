@@ -13,7 +13,7 @@ public class CommunityPageFree extends TestBase{
 	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div/span")
 	WebElement cancelSign;
 	
-	@FindBy(xpath="//button[contains(@class, 'btn-word-break')]")
+	@FindBy(xpath="//button[@class='btn btn-default-outline dropdown-toggle btn-word-break']")
 	WebElement typeOfMessageDropDown;
 	
 	@FindBy(xpath="//*[@id='dropdown-post-type']/div/form/div[3]/label")

@@ -39,7 +39,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		

@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 
 public class MatchPageAdmin extends TestBase{
 	//Page factory or Object repository
-	@FindBy(id="filter-search-input")
+	@FindBy(xpath="//input[@id='filter-search-input']")
 	WebElement valueFilter;
 				
 	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div/span")

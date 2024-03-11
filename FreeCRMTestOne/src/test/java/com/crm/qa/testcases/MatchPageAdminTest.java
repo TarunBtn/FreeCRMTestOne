@@ -17,7 +17,6 @@ public class MatchPageAdminTest extends TestBase{
 	MatchPageAdmin matchPageAdmin;
 	TestUtil testUtil;
 	
-	
 	public MatchPageAdminTest() {
 		super();
 	}
@@ -34,6 +33,7 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitEleven();
 		try {
 		    homePageAdmin.clickMatchTab();
+		    testUtil.testWaitFourteen();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}

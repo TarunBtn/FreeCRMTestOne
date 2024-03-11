@@ -9,16 +9,16 @@ import com.crm.qa.base.TestBase;
 
 public class UlogoAllcompaniesPage extends TestBase{	
 	//Pagefactory OR Object Repository	
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select")
+	@FindBy(xpath="//select[@class='custom-select common-filter-height']")
 	WebElement verifiedCompanyDropDown;
 	
 	@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select/option[1]")
 	WebElement allCompany;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select/option[2]")
+	@FindBy(xpath="//option[@value='Eigenaar van bedrijf']")
 	WebElement verifiedCompany;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select/option[3]")
+	@FindBy(xpath="//option[@value='Eigenaar van bedrijf - Niet Geverifieerd']")
 	WebElement notVerifiedCompany;
 	
 	@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div[1]/div[3]/div/label")
@@ -63,7 +63,7 @@ public class UlogoAllcompaniesPage extends TestBase{
 	@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[18]/div/button")
 	WebElement clickSaveBtn;
 	
-	@FindBy(xpath="//a[@title='Annuleren']")
+	@FindBy(xpath="//a[@class='btn btn-primary-outline']")
 	WebElement clickCancelBtn;
 	
 	

@@ -42,6 +42,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
+		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();

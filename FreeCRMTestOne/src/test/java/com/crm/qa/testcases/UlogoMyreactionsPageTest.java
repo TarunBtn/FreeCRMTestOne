@@ -40,7 +40,7 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		
 	}
 	

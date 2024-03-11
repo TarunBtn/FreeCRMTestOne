@@ -2,17 +2,17 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T16:46:02 IST" name="Default suite" finished-at="2024-03-07T16:46:02 IST" duration-ms="37">
+  <suite started-at="2024-03-11T17:25:47 IST" name="Default suite" finished-at="2024-03-11T17:25:47 IST" duration-ms="35">
     <groups>
     </groups>
-    <test started-at="2024-03-07T16:46:02 IST" name="Default test" finished-at="2024-03-07T16:46:02 IST" duration-ms="37">
-      <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.EntrepreneursPageFreeTest@5a45133e]" started-at="2024-03-07T16:46:02 IST" name="setUp" finished-at="2024-03-07T16:46:02 IST" duration-ms="8" status="FAIL">
+    <test started-at="2024-03-11T17:25:47 IST" name="Default test" finished-at="2024-03-11T17:25:47 IST" duration-ms="35">
+      <class name="com.crm.qa.testcases.CompleteAssignmentTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CompleteAssignmentTest@2d52216b]" started-at="2024-03-11T17:25:47 IST" name="setUp" finished-at="2024-03-11T17:25:47 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
-at com.crm.qa.testcases.EntrepreneursPageFreeTest.setUp(EntrepreneursPageFreeTest.java:26)
+at com.crm.qa.testcases.CompleteAssignmentTest.setUp(CompleteAssignmentTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,12 +51,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="entrepreneurPageFilter()[pri:0, instance:com.crm.qa.testcases.EntrepreneursPageFreeTest@5a45133e]" started-at="2024-03-07T16:46:02 IST" name="entrepreneurPageFilter" finished-at="2024-03-07T16:46:02 IST" duration-ms="0" status="SKIP">
+        <test-method signature="completeAssignmentTest()[pri:0, instance:com.crm.qa.testcases.CompleteAssignmentTest@2d52216b]" started-at="2024-03-11T17:25:47 IST" name="completeAssignmentTest" finished-at="2024-03-11T17:25:47 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.crm.qa.base.TestBase.initialization(TestBase.java:38)
-at com.crm.qa.testcases.EntrepreneursPageFreeTest.setUp(EntrepreneursPageFreeTest.java:26)
+at com.crm.qa.testcases.CompleteAssignmentTest.setUp(CompleteAssignmentTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,12 +94,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- entrepreneurPageFilter -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.EntrepreneursPageFreeTest@5a45133e]" started-at="2024-03-07T16:46:02 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709810162059" status="SKIP">
+        </test-method> <!-- completeAssignmentTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CompleteAssignmentTest@2d52216b]" started-at="2024-03-11T17:25:47 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1710158147057" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.EntrepreneursPageFreeTest -->
+      </class> <!-- com.crm.qa.testcases.CompleteAssignmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

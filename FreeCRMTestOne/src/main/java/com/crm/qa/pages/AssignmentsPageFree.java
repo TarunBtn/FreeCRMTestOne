@@ -18,10 +18,10 @@ public class AssignmentsPageFree extends TestBase{
 	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div[2]/span")
 	WebElement clearFilter;
 	
-	@FindBy(id="dropdown-sector")
+	@FindBy(xpath="//button[@class='btn btn-default-outline dropdown-toggle filter-not-applied filter-applied-not']")
 	WebElement sector;
 		
-	@FindBy(xpath="//*[@id=\"dropdown-sector\"]/div/form/div[3]/label")
+	@FindBy(xpath="//label[text()='Agrarisch / Visserij']")
 	WebElement selectSector;
 		
 	@FindBy(xpath="//*[@id=\"dropdown-vakgebied\"]/button")

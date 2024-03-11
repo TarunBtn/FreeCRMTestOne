@@ -9,10 +9,10 @@ import com.crm.qa.base.TestBase;
 
 public class EntrepreneursPageFree extends TestBase{
 	//Page factory OR Object Repository
-	@FindBy(xpath="//*[@id=\"filter-search-input\"]")
+	@FindBy(xpath="//input[@id='filter-search-input']")
 	WebElement findEntrepreneur;
 	
-	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div/span")
+	@FindBy(xpath="//span[@class='material-icons clear-icon']")
 	WebElement clickCancel;
 	
 	@FindBy(xpath="//*[@id=\"dropdown-werkdenkniveau\"]/button")

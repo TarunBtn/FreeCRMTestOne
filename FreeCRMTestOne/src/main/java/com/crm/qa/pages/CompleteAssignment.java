@@ -63,10 +63,10 @@ public class CompleteAssignment extends TestBase{
 	@FindBy(xpath="//*[@id=\"uurtarief\"]/div/div[4]/div[1]")
 	WebElement hourlyRateFromTo;
 	
-	@FindBy(xpath="//*[@id=\"assignment-add\"]/span[2]/div/span/div[2]/form/div[7]/div[2]/div/div/div[1]")
+	@FindBy(xpath="//*[@id='assignment-add']/span[2]/div/span/div[2]/form/div[7]/div[2]/div/div/div[1]")
 	WebElement desciplineDropDown;
 	
-	@FindBy(xpath="//*[@id=\"opdracht.vakgebied-6\"]/span/span")
+	@FindBy(xpath="//*[@id='opdracht.vakgebied-6']/span/span")
 	WebElement selectDescipline;
 	
 	@FindBy(xpath="//*[@id=\"opleidingsniveau\"]")

@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.crm.qa.base.TestBase;
 
-
 public class HomePageFree extends TestBase{
 	//Page factory OR Object repository
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")
@@ -18,10 +17,10 @@ public class HomePageFree extends TestBase{
 	@FindBy(xpath="//button[@data-cookiefirst-button='primary']")
 	WebElement acceptAllCookies;
 	
-	@FindBy(xpath="//span[contains(@class, 'items-center')]")
+	@FindBy(xpath="//span[@class='d-flex align-items-center']")
 	WebElement networkTab;
 	
-	@FindBy(xpath="//a[@href='/community' and @class='nav-link']")
+	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[2]/ul[1]/li[3]/a/ul/li[1]/a")
 	WebElement networkTooltip;
 	
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[2]/ul[1]/li[3]/a/ul/li[2]/a")

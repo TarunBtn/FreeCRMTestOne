@@ -38,7 +38,7 @@ public class CommunityPageAdminTest extends TestBase{
 		try {
 		    homePageAdmin.clickCommunityPageAdmin();
 		    testUtil.testWaitFourteen();
-		}catch(ElementNotInteractableException e) {
+		}catch(NoSuchElementException e) {
 			e.printStackTrace();
 		}
 		testUtil.testWaitEleven();

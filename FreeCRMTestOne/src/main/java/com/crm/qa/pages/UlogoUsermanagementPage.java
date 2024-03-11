@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 
 public class UlogoUsermanagementPage extends TestBase{
 	//Pagefactory OR Object Repository
-	@FindBy(xpath="//input[contains(@placeholder,\"Type om te zoeken naam\")]")
+	@FindBy(xpath="//input[@id='filter-input' and @placeholder='Type om te zoeken naam']")
 	WebElement searchName;
 	
 	@FindBy(xpath="//*[@id=\"__BVID__19\"]/div/div/div/button")

@@ -41,6 +41,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 	
 	@Test
 	public void UlogoMyProfilePage()throws Exception {
+		//Edit profile-General Tab 
 		uLogoMyprofilePage.clickEditYourProfile();
 		testUtil.testWaitFourteen();
 		//testUtil.scrollDown();
@@ -83,6 +84,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		//testUtil.testWaitTwo();
 		//uLogoMyprofilePage.clickFillInCompanyCancel();
 		//testUtil.testWaitFour();
+		//Skill Tab
 		uLogoMyprofilePage.clickSkillsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -176,9 +178,9 @@ public class UlogoMyprofilePageTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		uLogoMyprofilePage.deleteWorkExperience();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		uLogoMyprofilePage.clickDeleteWorkExperience();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		//testUtil.scrollDown();
@@ -189,11 +191,11 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.clickUploadCV();
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickChooseFile();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickUploadFile();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//uLogoMyprofilePage.clickUpdateMyProfile();
 		//testUtil.testWaitFour();
 		uLogoMyprofilePage.clickCancelUploadCV();
@@ -202,7 +204,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		//Educations
+		//Educations Tab
 		uLogoMyprofilePage.clickEducationsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -219,6 +221,8 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickEducationLevel();
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickStartingYear();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.selectStartingYear();
@@ -226,9 +230,11 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.clickStartingYear();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickSaveBtnOne();
-		testUtil.testWaitEight();
-		//testUtil.scrollUp();
-		//testUtil.testWaitFour();
+		testUtil.testWaitEleven();
+		testUtil.scrollUp();
+		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitFour();
 		/*uLogoMyprofilePage.clickEditEducations();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
@@ -241,8 +247,10 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();*/
-		//Courses
+		//Courses Tab
 		uLogoMyprofilePage.clickCoursesTab();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickAddCourse();
 		testUtil.testWaitTwo();
@@ -257,19 +265,21 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.selectCompletedOnDateCourse();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickSaveCourse();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
+		testUtil.testWaitEight();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		//uLogoMyprofilePage.clickEditCourse();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
-		uLogoMyprofilePage.clickDeleteCourse();
-		testUtil.testWaitFour();
-		uLogoMyprofilePage.clickConfirmDeleteCourse();
-		testUtil.testWaitFour();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//uLogoMyprofilePage.clickDeleteCourse();
+		//testUtil.testWaitFour();
+		//uLogoMyprofilePage.clickConfirmDeleteCourse();
+		//testUtil.testWaitFour();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickInstitutionsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();

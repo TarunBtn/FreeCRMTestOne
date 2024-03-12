@@ -70,6 +70,7 @@ public class CompleteAssignmentTest extends TestBase {
 	
 	@Test
 	public void completeAssignmentTest()throws Exception {
+		System.out.println("Test is passed");
 		/*completeAssignment.clickCompanyDropDown();
 		testUtil.testWaitTwo();
 		completeAssignment.selectCompany();

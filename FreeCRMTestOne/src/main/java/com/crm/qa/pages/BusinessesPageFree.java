@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 
 public class BusinessesPageFree extends TestBase{
 	//PageFactory OR Object Repository
-    @FindBy(xpath="//input[contains(@id, 'search')]")
+    @FindBy(xpath="//input[@id='company-search']")
     WebElement filterValue;
     
     @FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[2]/a[2]/div[2]/div/span")

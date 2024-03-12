@@ -38,14 +38,13 @@ public class BusinessesPageFreeTest extends TestBase{
 			e.printStackTrace();
 		}
 		testUtil.testWaitFour();
-		//testUtil.testWaitFour();
 		try {
 		    homePageFree.clickBusinessesTab();
 		    testUtil.testWaitFourteen();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 				
 	}
 	
@@ -82,7 +81,7 @@ public class BusinessesPageFreeTest extends TestBase{
 		businessesPageFree.sortingAtoZ();
 		testUtil.testWaitEight();
 		businessesPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		
 	}
 	

@@ -90,7 +90,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		testUtil.testWaitFour();
 		//Sector
 		uLogoMycompanyPage.clickSectorDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMycompanyPage.selectSector();
 		testUtil.testWaitEight();
 		testUtil.scrollDown();

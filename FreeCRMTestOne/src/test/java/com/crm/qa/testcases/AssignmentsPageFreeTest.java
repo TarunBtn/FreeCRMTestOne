@@ -20,7 +20,6 @@ public class AssignmentsPageFreeTest extends TestBase{
 	public AssignmentsPageFreeTest() {
 		super();
 	}
-	
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -36,9 +35,9 @@ public class AssignmentsPageFreeTest extends TestBase{
 		}catch(NoSuchElementException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitFour();
-		homePageFree.clickAssignmentsLink();
 		testUtil.testWaitEight();
+		homePageFree.clickAssignmentsLink();
+		testUtil.testWaitFourteen();
 			
 	}
 	
@@ -54,33 +53,33 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.clickSectorTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectSector();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectSector();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//Descipline
 		assignmentsPageFree.clickDescipline();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectDescipline();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectDescipline();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//Skill
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.enterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.enterSkillValue("Postman");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//assignmentsPageFree.selectSkillToolTip();
 		//testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickClearFilterSkill();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickCancelSkill();
 		testUtil.testWaitFour();
 		//Duration
@@ -115,26 +114,26 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectHours();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHours();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Hourly rate
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectHourlyRate();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHourlyRate();
@@ -149,11 +148,11 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.enterLocationToolTip();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyLocationFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//assignmentsPageFree.clickLocationTab();
 		//testUtil.testWaitTwo();
 		//assignmentsPageFree.clickCancelLocation();
@@ -172,13 +171,13 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectPublicationDateOldFirst();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectAtHourlyRate();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectByNumberOfHours();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectPublicationDateNewFirst();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
 		

@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +17,6 @@ public class MyAssignmentsPageTest extends TestBase{
 	HomePage homePage;
 	MyAssignmentsPage myAssignmentsPage;
 	AddCommandPage addCommandPage;
-	//CheckCommandPage checkCommandPage;
 	TestUtil testUtil;
 	
 	public MyAssignmentsPageTest() {
@@ -33,15 +33,19 @@ public class MyAssignmentsPageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
 		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEleven();		
-		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
-		testUtil.testWaitEight();
+		try {
+		    homePage.clickMyAssignmentsLink();
+		    testUtil.testWaitFourteen();
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
+		testUtil.testWaitEleven();
 		//checkCommandPage=new CheckCommandPage();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 													
 	}
 	

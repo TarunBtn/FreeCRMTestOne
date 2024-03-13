@@ -21,7 +21,8 @@ public class TestBase {
 	public TestBase() {
 		try {
 		    prop=new Properties();
-		    FileInputStream ip=new FileInputStream("C:\\chromedriver\\Git\\config.properties");
+		    FileInputStream ip=new FileInputStream("C:\\Users\\tbutani\\git\\FreeCRMTestOne\\FreeCRMTestOne\\src\\"
+		    		+ "main\\java\\com\\crm\\qa\\config\\config.properties");
 		    prop.load(ip);
 		    
 		}catch(FileNotFoundException e) {

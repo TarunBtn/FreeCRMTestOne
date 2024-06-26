@@ -28,6 +28,7 @@ public class HomePageTest extends TestBase{
 	
 	@BeforeMethod
 	public void setUp()throws Exception {
+		Driver.quit();
 		initialization();
 		loginPage=new LoginPage();
 		homePageFree=new HomePageFree();

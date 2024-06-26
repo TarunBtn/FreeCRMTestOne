@@ -23,6 +23,7 @@ public class LoginPageTest extends TestBase{
 		
 	@BeforeMethod
 	public void setUp()throws Exception {
+		Driver.quit();
 		initialization();
 		loginPage=new LoginPage();
 		testUtil=new TestUtil();

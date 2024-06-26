@@ -41,7 +41,7 @@ public class TestBase {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
 			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-			 String chromeDriverPath = System.getenv("chromium") != null ? System.getenv("chromium") : "/usr/bin/chromium-browser";
+			 String chromeDriverPath = System.getenv("chromium") != null ? System.getenv("chromium") : "/usr/bin/chromedriver";
 	         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			
 			ChromeOptions options = new ChromeOptions();
@@ -58,18 +58,6 @@ public class TestBase {
 			 Driver=new FirefoxDriver();
 		}
 	
-		//ChromeOptions chromeOptions = new ChromeOptions();
-            //chromeOptions.addArguments("--headless");
-		//chromeOptions.setHeadless(true);
-        
-		    //Driver=new ChromeDriver(chromeOptions);
-		    //ChromeOptions options = new ChromeOptions();
-            //options.setHeadless(true);
-            //opt.addArguments("--headless=new");
-            //System.setProperty("webdriver.chrome.driver", "./YounitedAa/src/main/java/chromedriver");
-        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-        //Driver = new ChromeDriver(chromeOptions);
-		
 		//Driver=new ChromeDriver();
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();

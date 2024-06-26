@@ -52,8 +52,10 @@ public class TestBase {
 			options.addArguments("--window-size=1920,1080");
 			Driver=new ChromeDriver(options);
 		}else if(browserName.equals("FF")) {
-			System.setProperty("webdriver.firefox.driver", "C:\\geckodriver\\geckodriver.exe");
-			Driver=new FirefoxDriver();
+			//System.setProperty("webdriver.firefox.driver", "C:\\geckodriver\\geckodriver.exe");
+			 String geckoDriverPath = System.getenv("GECKO_DRIVER") != null ? System.getenv("GECKO_DRIVER") : "path/to/default/geckodriver";
+	         System.setProperty("webdriver.gecko.driver", geckoDriverPath);
+			 Driver=new FirefoxDriver();
 		}
 	
 		//ChromeOptions chromeOptions = new ChromeOptions();

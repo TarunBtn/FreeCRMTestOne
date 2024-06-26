@@ -25,8 +25,7 @@ public class TestBase {
     		    //+ "main\\java\\com\\crm\\qa\\config\\config.properties");
 		    String configPath = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/config/config.properties";
             System.out.println("Loading config from: " + configPath);
-            FileInputStream ip = new FileInputStream(configPath);
-		    
+            FileInputStream ip = new FileInputStream(configPath); 
 		    prop.load(ip);
 		    
 		}catch(FileNotFoundException e) {

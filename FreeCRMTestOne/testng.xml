@@ -4,7 +4,30 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.crm.qa.testcases.LoginPageTest"/>
-      <class name="com.crm.qa.testcases.MatchPageTest"/>   
+      <class name="com.crm.qa.testcases.HomePageTest"/>
+      <class name="com.crm.qa.testcases.MyAssignmentsPageTest"/>
+      <class name="com.crm.qa.testcases.AddCommandPageTest"/>
+      <class name="com.crm.qa.testcases.CheckCommandPageTest"/>
+      <class name="com.crm.qa.testcases.CompleteAssignmentTest"/>
+      <class name="com.crm.qa.testcases.MatchPageTest"/>
+      <class name="com.crm.qa.testcases.AssignmentsPageFreeTest"/> 
+      <class name="com.crm.qa.testcases.StorePageFreeTest"/>
+      <class name="com.crm.qa.testcases.CommunityPageFreeTest"/>
+      <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest"/>
+      <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>
+      <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
+      <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
+      <class name="com.crm.qa.testcases.MatchPageAdminTest"/>
+      <class name="com.crm.qa.testcases.UlogoMydashboardPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoChatPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoMynotificationsPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoMyprofilePageTest"/>
+      <class name="com.crm.qa.testcases.UlogoMycompanyPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoMyreactionsPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoUsermanagementPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoAllcompaniesPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoIntermediarycompaniesPageTest"/>
+      <class name="com.crm.qa.testcases.UlogoAllassignmentsPageTest"/>   
           
     </classes>
   </test> <!-- Test -->
